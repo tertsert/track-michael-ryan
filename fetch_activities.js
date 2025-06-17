@@ -1,51 +1,54 @@
-const fs = require('fs');
-const axios = require('axios');
+// fetch_activities.js
 
-const CLIENT_ID = process.env.STRAVA_CLIENT_ID;
-const CLIENT_SECRET = process.env.STRAVA_CLIENT_SECRET;
-const REFRESH_TOKEN = process.env.STRAVA_REFRESH_TOKEN;
+const axios = require('axios');
+const fs = require('fs');
+require('dotenv').config();
+
+const STRAVA_CLIENT_ID = process.env.STRAVA_CLIENT_ID;
+const STRAVA_CLIENT_SECRET = process.env.STRAVA_CLIENT_SECRET;
+const STRAVA_REFRESH_TOKEN = process.env.STRAVA_REFRESH_TOKEN;
 
 async function getAccessToken() {
-  const res = await axios.post('https://www.strava.com/oauth/token', {
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
-    refresh_token: REFRESH_TOKEN,
-    grant_type: 'refresh_token'
-  });
-  return res.data.access_token;
+  try {
+    const response = await axios.post('https://www.strava.com/oauth/token', {
+      client_id: STRAVA_CLIENT_ID,
+      client_secret: STRAVA_CLIENT_SECRET,
+      refresh_token: STRAVA_REFRESH_TOKEN,
+      grant_type: 'refresh_token',
+    });
+    return response.data.access_token;
+  } catch (err) {
+    console.error('❌ Error getting access token:', err.response?.data || err.message);
+    process.exit(1);
+  }
 }
 
-async function fetchAllActivities() {
-  const ACCESS_TOKEN = await getAccessToken();
-  let page = 1;
-  const per_page = 100;
-  let allActivities = [];
-
-  while (true) {
-    const res = await axios.get('https://www.strava.com/api/v3/athlete/activities', {
-      headers: { Authorization: `Bearer ${ACCESS_TOKEN}` },
-      params: { page, per_page }
+async function fetchActivities(accessToken) {
+  try {
+    const response = await axios.get('https://www.strava.com/api/v3/athlete/activities', {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+      params: {
+        per_page: 100,
+        page: 1,
+      },
     });
 
-    const activities = res.data;
-    if (activities.length === 0) break;
+    const filtered = response.data.filter(
+      (act) => act.type === 'Run' || act.type === 'Ride'
+    );
 
-    const simplified = activities
-      .filter(a => ['Run', 'Ride'].includes(a.type) && a.map.summary_polyline)
-      .map(a => ({
-        name: a.name,
-        type: a.type,
-        map: { summary_polyline: a.map.summary_polyline }
-      }));
+    console.log(`✅ Fetched ${filtered.length} bike/run activities`);
 
-    allActivities.push(...simplified);
-    page++;
+    fs.writeFileSync('./data/activities.json', JSON.stringify(filtered, null, 2));
+  } catch (err) {
+    console.error('❌ Error fetching activities:', err.response?.data || err.message);
+    process.exit(1);
   }
-
-  fs.writeFileSync('data/activities.json', JSON.stringify(allActivities, null, 2));
-  console.log(`✅ Saved ${allActivities.length} activities`);
 }
 
-fetchAllActivities().catch(err => {
-  console.error('❌ Error:', err.response?.data || err.message);
-});
+(async () => {
+  const token = await getAccessToken();
+  await fetchActivities(token);
+})();
