@@ -23,31 +23,38 @@ async function getAccessToken() {
 }
 
 async function fetchActivities(accessToken) {
+  const allActivities = [];
+  let page = 1;
+  let fetched = [];
+
   try {
-    const response = await axios.get('https://www.strava.com/api/v3/athlete/activities', {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-      params: {
-        per_page: 100,
-        page: 1,
-      },
-    });
+    do {
+      const response = await axios.get('https://www.strava.com/api/v3/athlete/activities', {
+        headers: { Authorization: `Bearer ${accessToken}` },
+        params: {
+          per_page: 100,
+          page: page,
+        },
+      });
 
-    const filtered = response.data.filter(
-      (act) => act.type === 'Run' || act.type === 'Ride'
-    );
+      fetched = response.data;
 
-    console.log(`✅ Fetched ${filtered.length} bike/run activities`);
+      // Filter just runs and rides
+      const filtered = fetched.filter(
+        (act) => act.type === 'Run' || act.type === 'Ride'
+      );
 
-    fs.writeFileSync('./data/activities.json', JSON.stringify(filtered, null, 2));
+      allActivities.push(...filtered);
+      console.log(`📦 Page ${page}: ${filtered.length} activities added`);
+
+      page++;
+    } while (fetched.length === 100);
+
+    console.log(`✅ Total: ${allActivities.length} bike/run activities fetched`);
+
+    fs.writeFileSync('./data/activities.json', JSON.stringify(allActivities, null, 2));
   } catch (err) {
     console.error('❌ Error fetching activities:', err.response?.data || err.message);
     process.exit(1);
   }
 }
-
-(async () => {
-  const token = await getAccessToken();
-  await fetchActivities(token);
-})();
