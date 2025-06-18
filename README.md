@@ -1,1 +1,1 @@
-I use Pipedream to activate the action workflow twice a day: once at 8 a.m. CST and once at 10 p.m. CST. The 8 a.m. time is to make sure I catch something from the previous day, and the 10 p.m. time is the main catch to update my activity at the end of the day.
+I use Pipedream to activate the action workflow once a day at 11:25 CST
