@@ -19864,5 +19864,72 @@
     "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 16
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "One small step",
+    "distance": 3391.2,
+    "moving_time": 1187,
+    "elapsed_time": 1196,
+    "total_elevation_gain": 36,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 14834226832,
+    "start_date": "2025-06-18T01:09:38Z",
+    "start_date_local": "2025-06-17T20:09:38Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 3,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14834226832",
+      "summary_polyline": "}llxFvfemQy@FkBVy@G{@Yg@c@]o@][e@Ue@KY?o@N]VcBjB{@dABRVn@\\nAPx@NpBBbFDl@Fb@Dz@nADzDEvABpBA`BB`ACNH?lEAXAfEAl@G`@A@YDe@AO@y@@g@FaACg@KkC{A[_@EKCc@?sABq@To@hBe@DDFx@AzBBpBCj@B`@TNd@PRD~@CNMFUHeAA}@@m@G{B?kAK_@UCo@Bi@Ay@LBA~CC|ABr@?XUF_@T[B[FMD?dC@z@A\\BnB?F?LE@EFq@BqA@y@Aq@Dc@DkBGi@KKc@Sm@s@C@UT_AjA_@Xw@XK?a@Q_@]@MPk@RyA@g@B{CGUEA{ADe@N",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864957,
+      -96.697552
+    ],
+    "end_latlng": [
+      40.864896,
+      -96.697508
+    ],
+    "average_speed": 2.857,
+    "max_speed": 3.389,
+    "average_cadence": 88.2,
+    "average_temp": 28,
+    "has_heartrate": true,
+    "average_heartrate": 141.3,
+    "max_heartrate": 153,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 380.8,
+    "elev_low": 366.6,
+    "upload_id": 15831763122,
+    "upload_id_str": "15831763122",
+    "external_id": "garmin_ping_450194429898",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 6
   }
 ]
