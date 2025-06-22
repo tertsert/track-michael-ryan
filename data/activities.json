@@ -20270,5 +20270,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 62
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Sponsored by white elm",
+    "distance": 2510.6,
+    "moving_time": 705,
+    "elapsed_time": 712,
+    "total_elevation_gain": 25,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 14875755510,
+    "start_date": "2025-06-22T01:17:27Z",
+    "start_date_local": "2025-06-21T20:17:27Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 4,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14875755510",
+      "summary_polyline": "gllxFbfemQsCh@U@g@Aa@Ge@OSKSQ}@qAUUIGa@IIG`@aELeB?[GOEAcBISKGiACw@BaFBuBIw@Sk@CEK?o@FYAe@@e@NCb@?jCMf@Y^a@X}Ap@u@h@YDEAKOQq@M{@Es@Oc@_@BEDG^@RHPX`@Vt@J^Rf@ARWVSZQp@@FRXpBhAPMd@g@PO`@SlEsB^I^?HTDn@@bAKj@g@XKTDj@XLJI@UEU_@Wg@LUJg@TYb@KXG`@CVvAzA`AnBXTJ?x@c@LAd@@JBdAr@\\f@\\Xr@ZZHf@DP?b@CdBa@LCVU@E",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864842,
+      -96.697456
+    ],
+    "end_latlng": [
+      40.864854,
+      -96.697517
+    ],
+    "average_speed": 3.561,
+    "max_speed": 4.683,
+    "average_cadence": 86.9,
+    "average_temp": 32,
+    "has_heartrate": true,
+    "average_heartrate": 151,
+    "max_heartrate": 172,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 376.6,
+    "elev_low": 361.6,
+    "upload_id": 15876859325,
+    "upload_id_str": "15876859325",
+    "external_id": "garmin_ping_451506766743",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 9
   }
 ]
