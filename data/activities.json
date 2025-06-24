@@ -20404,5 +20404,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 11
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Changing lines to gradients",
+    "distance": 4267.1,
+    "moving_time": 1292,
+    "elapsed_time": 1301,
+    "total_elevation_gain": 25,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 14895602245,
+    "start_date": "2025-06-23T23:23:23Z",
+    "start_date_local": "2025-06-23T18:23:23Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 3,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14895602245",
+      "summary_polyline": "}llxFjfemQgBd@q@Ly@CiAa@e@c@k@}@k@c@]Ig@GK@a@Pa@ZG@kAoBk@g@mBkAi@g@}@iAe@i@a@Ys@[kAu@QUWe@w@sBQe@Mk@EUAw@@q@OcAKKs@Tu@@c@Km@c@E@GHCLFLD@NCFKCOu@_A[c@S_AKiBMkAUsAa@qAeB}DOa@Km@Cg@`@KN[Cc@SKWDQPB`AEGWcCPoBBs@?a@Em@Ue@SWa@Q]Y[Gb@HV?DCFa@DiAFq@NML?f@JN@dA?JQ@g@Eu@Qe@QS[SgAKe@OAUDQHEVFXb@d@Ld@P\\b@DLLn@BfACx@En@Sf@[`@m@Pe@VGNPv@AjABJHHt@VlB@XB@@@JM|D?jD@ZEf@WbAY`@AD^x@Lt@RlBBjAF~@Rn@FJXd@TTb@\\XPf@Rf@LPA`@EN?@DLrAEr@Fx@Np@d@pAx@jB\\b@LJxBlA`@Xx@dAhAnAVPrAp@JFp@x@v@pAHAZ]NKd@Ol@?d@FPF\\Zj@~@TTXPj@P`AHXAbCa@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864959,
+      -96.697496
+    ],
+    "end_latlng": [
+      40.864988,
+      -96.697598
+    ],
+    "average_speed": 3.303,
+    "max_speed": 4.063,
+    "average_cadence": 88.9,
+    "average_temp": 28,
+    "has_heartrate": true,
+    "average_heartrate": 149.1,
+    "max_heartrate": 165,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 376.6,
+    "elev_low": 345.8,
+    "upload_id": 15898423506,
+    "upload_id_str": "15898423506",
+    "external_id": "garmin_ping_452147672780",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 14
   }
 ]
