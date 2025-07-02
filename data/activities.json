@@ -21214,5 +21214,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 6
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "neighborhood nearly finished in the spants",
+    "distance": 6012.8,
+    "moving_time": 1903,
+    "elapsed_time": 1915,
+    "total_elevation_gain": 67,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 14988792382,
+    "start_date": "2025-07-02T22:14:48Z",
+    "start_date_local": "2025-07-02T17:14:48Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14988792382",
+      "summary_polyline": "cllxFhfemQZMn@Eh@@NGBsAFi@Ew@BoDC{BDmDEQICeACq@FCCAQDo@?}@O}AKq@Qy@?Od@KdAq@p@{@h@kAHs@DiA@cBKs@GcAGiCDyAAqBB_A?}AB_AAcBF{DE{@i@[UES?_AOwAVSR?Dr@?ZG\\BHA`@DTAl@@p@CLCz@@ZKXAfBJ~@Hd@CZSBEHgBCy@UaAC@A`@J`AAhCPT^Ft@CRGrA@d@@ZC\\?~AH^C^BTJr@DhAMP@KdBSj@KLYFa@?c@Qs@Oc@DC@U@uBQQ?g@Dg@GmAB}@G}A@AQAw@@y@IOC@CDCjA@^?ZGxA@t@Dz@`@hBNb@?Ps@Xe@He@Cc@?IJA^NBd@Ax@MrBmAf@Sf@Ih@Dd@EXKb@?\\CJ?VF^j@D`@EzD?hDMbFBvA@@RQFc@AgDLsF?a@CWS_@i@IY?u@Io@AS@a@Im@L]Z[NIHUDaAf@aBHa@CSKJmD?yFEw@DiFCA]?oAESJE^M`@ItC?hDIzB@hEElA?tA@p@VxB?r@IxAIv@KV]p@w@v@WPOLe@RKJ@PXdARdAF`B?z@GX?NB@jANVC`@@JB@BIpFB|@KdFB~AGb@C@kAGm@F",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864825,
+      -96.697486
+    ],
+    "end_latlng": [
+      40.864847,
+      -96.697479
+    ],
+    "average_speed": 3.16,
+    "max_speed": 4.34,
+    "average_cadence": 86.5,
+    "average_temp": 35,
+    "has_heartrate": true,
+    "average_heartrate": 159.7,
+    "max_heartrate": 176,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 379.6,
+    "elev_low": 352.8,
+    "upload_id": 16000358179,
+    "upload_id_str": "16000358179",
+    "external_id": "garmin_ping_455118416585",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 40
   }
 ]
