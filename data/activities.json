@@ -22214,14 +22214,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "07/12/25",
+    "name": "Day 7 (STP day 1)",
     "distance": 161430,
     "moving_time": 24239,
     "elapsed_time": 28998,
     "total_elevation_gain": 629.5,
     "type": "Ride",
     "sport_type": "Ride",
-    "workout_type": null,
+    "workout_type": 10,
     "id": 15093653231,
     "start_date": "2025-07-12T13:17:51Z",
     "start_date_local": "2025-07-12T06:17:51Z",
@@ -22243,8 +22243,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -22270,7 +22270,7 @@
     "external_id": "307335756.fit",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 1,
     "has_kudoed": false
   }
 ]
