@@ -22939,14 +22939,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "07/17/25",
+    "name": "free cheese at tillamook",
     "distance": 79808.6,
     "moving_time": 15034,
     "elapsed_time": 20316,
     "total_elevation_gain": 736.2,
     "type": "Ride",
     "sport_type": "Ride",
-    "workout_type": null,
+    "workout_type": 10,
     "id": 15149278825,
     "start_date": "2025-07-17T16:33:33Z",
     "start_date_local": "2025-07-17T09:33:33Z",
@@ -22956,7 +22956,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 1,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -22968,8 +22968,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -22995,7 +22995,7 @@
     "external_id": "309084740.fit",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 5,
     "has_kudoed": false
   }
 ]
