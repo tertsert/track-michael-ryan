@@ -32,6 +32,27 @@
   body {
     text-align: center;
   }
+
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#map, /* or whatever your map container is named */
+.someMainContentWrapper {
+  flex: 1; /* allows this to grow and push footer down */
+}
+
+#stats {
+  /* your existing styles here */
+  margin-top: auto; /* pushes it down */
+}
   </style>
 </head>
 <body>
