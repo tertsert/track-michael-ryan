@@ -15,6 +15,23 @@
       margin: 0 5px;
       padding: 6px 12px;
     }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+  #stats {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    background: white;
+    padding: 16px 24px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+  }
+
+  body {
+    text-align: center;
+  }
   </style>
 </head>
 <body>
@@ -59,28 +76,28 @@
     }
 
     function calculateTripStats(data) {
-      const tripStart = new Date('2025-07-07T00:00:00Z');
-      let totalDistance = 0; // meters
-      let totalTime = 0;     // seconds
+  const tripStart = new Date('2025-07-07T00:00:00Z');
+  let totalDistance = 0; // meters
+  let totalTime = 0;     // seconds
 
-      data.forEach(activity => {
-        const activityDate = new Date(activity.start_date);
-        if (
-          activityDate >= tripStart &&
-          activity.type.toLowerCase() === 'ride'
+  data.forEach(activity => {
+    const activityDate = new Date(activity.start_date);
+    if (
+      activityDate >= tripStart &&
+      activity.type.toLowerCase() === 'ride'
     ) {
-          totalDistance += activity.distance;
-          totalTime += activity.moving_time;
+      totalDistance += activity.distance;
+      totalTime += activity.moving_time;
     }
   });
 
-      const distanceKm = totalDistance / 1000;
-      const avgSpeed = totalTime > 0 ? (distanceKm / (totalTime / 3600)) : 0;
+  const distanceMiles = totalDistance / 1609.34;
+  const avgSpeed = totalTime > 0 ? (distanceMiles / (totalTime / 3600)) : 0;
 
-      document.getElementById('trip-distance').textContent =
-        `Pacific Coast Distance Traveled: ${distanceKm.toFixed(1)} km`;
-      document.getElementById('trip-speed').textContent =
-        `Average Trip Speed: ${avgSpeed.toFixed(1)} km/h`;
+  document.getElementById('trip-distance').textContent =
+    `Pacific Coast Distance Traveled: ${distanceMiles.toFixed(1)} mi`;
+  document.getElementById('trip-speed').textContent =
+    `Average Trip Speed: ${avgSpeed.toFixed(1)} mph`;
 }
 
     fetch('data/activities.json')
