@@ -40,10 +40,7 @@
     <button id="filter-bike">Bike Only</button>
     <button id="filter-run">Run Only</button>
   </div>
-  <div id="stats" style="margin: 10px;">
-  <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
-  <p id="trip-speed">Average Trip Speed: …</p>
-  </div>
+  
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -111,5 +108,11 @@
     document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
   });
   </script>
+
+  <div id="stats" style="margin: 10px;">
+  <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
+  <p id="trip-speed">Average Trip Speed: …</p>
+  </div>
+  
 </body>
 </html>
