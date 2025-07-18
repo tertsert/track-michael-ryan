@@ -23,6 +23,10 @@
     <button id="filter-bike">Bike Only</button>
     <button id="filter-run">Run Only</button>
   </div>
+  <div id="stats" style="margin: 10px;">
+  <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
+  <p id="trip-speed">Average Trip Speed: …</p>
+  </div>
   <div id="map"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -54,14 +58,41 @@
       });
     }
 
+    function calculateTripStats(data) {
+      const tripStart = new Date('2025-07-07T00:00:00Z');
+      let totalDistance = 0; // meters
+      let totalTime = 0;     // seconds
+
+      data.forEach(activity => {
+        const activityDate = new Date(activity.start_date);
+        if (
+          activityDate >= tripStart &&
+          activity.type.toLowerCase() === 'ride'
+    ) {
+          totalDistance += activity.distance;
+          totalTime += activity.moving_time;
+    }
+  });
+
+      const distanceKm = totalDistance / 1000;
+      const avgSpeed = totalTime > 0 ? (distanceKm / (totalTime / 3600)) : 0;
+
+      document.getElementById('trip-distance').textContent =
+        `Pacific Coast Distance Traveled: ${distanceKm.toFixed(1)} km`;
+      document.getElementById('trip-speed').textContent =
+        `Average Trip Speed: ${avgSpeed.toFixed(1)} km/h`;
+}
+
     fetch('data/activities.json')
-      .then(response => response.json())
-      .then(data => {
-        drawActivities(data);
-        document.getElementById('filter-all').addEventListener('click', () => drawActivities(data));
-        document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
-        document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
-      });
+  .then(response => response.json())
+  .then(data => {
+    drawActivities(data);
+    calculateTripStats(data); // ⬅️ Add this line
+
+    document.getElementById('filter-all').addEventListener('click', () => drawActivities(data));
+    document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
+    document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
+  });
   </script>
 </body>
 </html>
