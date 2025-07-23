@@ -23719,5 +23719,70 @@
     "pr_count": 0,
     "total_photo_count": 3,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "07/23/25",
+    "distance": 84660.5,
+    "moving_time": 20129,
+    "elapsed_time": 30364,
+    "total_elevation_gain": 1012.3,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": null,
+    "id": 15215523265,
+    "start_date": "2025-07-23T15:03:48Z",
+    "start_date_local": "2025-07-23T08:03:48Z",
+    "timezone": "(GMT-08:00) America/Los_Angeles",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a15215523265",
+      "summary_polyline": "yypcGxcovVH^e@h@tEtClB`FBtA|@BlAqAyAC_DyIaAmFDmCp@wDhH{Kf@aBA}DsAsIBmAjFuH|DyAtD_@xAaBZiBgAmUXwE`CwGvEkD`F[~k@vDfMqAnJuE`g@o`@lMuGxMeDbUyB~]eNxCJrQxDvFYtB_Al^{YhKwF~NcExIoIlCc@lKJxIuEbDo@tI^|H_AzGZbHe@nQ{IlQ{@xGaEtMwPt@`@~@cCvGqBvVLtDhA~CvDnExLlBdDjN~K`ElBlQWhJdBlC?pCgBjFmJAbB}B~CBhAm@z@KjBcApAC|BWA~@bAl@tC]|DLbImAhCZbCYcAJbA`@w@a@QKmAnAgCOcG\\qEu@wFe@[HoAdAyALcBl@{CtByCXaDzCyEtC}B`UyJrNbArK{ChLStBgArHwHrDaAzH[bLmJhOi@nc@_RrFo@fDXfFxB`t@fl@dNlItJvCxl@rJxOrDl|@n[~GfDjDp@tyAzh@vKx@`Y{CxOj@xkBhj@xXhFtVhAfhBpApMpAlLrCxqC|aA|GpAfGaAbEuCdD_GnAeGAwLaG_b@[_HZgUhA_DtBwAb\\DrBn@lAdBtDnK~CzDpHnDg@`DL|@`GlH~@TTa@Db@gAQ}GaIAo@|@aCv^bP~]Yx}ApLzTkBxECxXnFdHc@`YaJdPwDtLaAzX]f_@oH`DgB`HaHvOeDzGaIjCkBhMqArJaEpD`@hG~EnNzG`T`Q`Ez@nDKfLuC`D_BnCuD`EyLhB_DnDkCtFg@tD~@rDnDtLh^dRfYfE~CtFT`FqCbJ{L~HeRhQkKbH_A`NpFbHCva@sLxDcBrBiCxFgLhFcDtE@~NxEjFH~B{@bKkInDiBlt@eTfGk@|a@b@tLk@tsC_g@dF}AhGyDxD}DnOwSzCwBpFgBvKQvn@tC~Iy@nDwBhC_DfIkTtCoEnCaBrMgDvBwAxJkOrBaChNsGlImG|EcJrG_VrCmDtCuA|CYfEx@nBnAjM`NhD|A`D^xFs@`O_IpWaBVbC_@dDk@t@v@~Eo@jB_@aAGiG`Am@p@{C?kC`FZtMlDjGg@|D}C|M_RvFmFda@cRhEwC|CgDfKgQ|CiD~DoAhQWnN{IxCI~KlB|LyCrEKdDdApLxHbHrAfEi@hVgK~Iw@dHlApNvIrEnAn_@yAbFeAtDiCnBiCdP}ZbEqDtEcBxXh@~DiAlPiK|NZxDOzDeApN}F|DVdObEzCTvTgBvu@{@lHoAr_Aqj@j_BcwA`GkJr[qs@xHgMxJmL`K_Jn_A{p@~FkDnCZbC_FdYeUfCoErAyF~BcRmAg@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      42.689734,
+      -124.437246
+    ],
+    "end_latlng": [
+      42.055913,
+      -124.292075
+    ],
+    "average_speed": 4.206,
+    "max_speed": 15.7,
+    "average_watts": 59.5,
+    "device_watts": false,
+    "kilojoules": 1197.3,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 221.2,
+    "elev_low": 5.1,
+    "upload_id": 16248762037,
+    "upload_id_str": "16248762037",
+    "external_id": "311581162.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false
   }
 ]
