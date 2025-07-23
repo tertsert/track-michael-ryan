@@ -23693,8 +23693,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -23717,7 +23717,7 @@
     "external_id": "968887E6-EA2D-4EEC-B889-41953CA18B72-activity.fit",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false
   }
 ]
