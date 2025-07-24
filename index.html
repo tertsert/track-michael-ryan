@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
  <head>
@@ -25,7 +24,7 @@
       height: 500px;
       min-height: 300px;
       overflow: hidden;
-   }
+    }
 
     #map {
       position: absolute;
@@ -37,7 +36,7 @@
       height: 100%;
       border-radius: 3px;
       z-index: 1;
-   }
+    }
 
     #stats {
       font-size: 14px;
@@ -63,26 +62,28 @@
       padding: 6px 12px;
     }
 
-    #journal {
+    #journal-gallery {
       max-width: 800px;
       margin: 60px auto;
       padding: 0 20px;
       font-family: 'Noto Sans', sans-serif;
       text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
     }
 
-    #journal .entry {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    #journal img {
-      max-width: 100%;
+    #journal-gallery img {
+      width: 100%;
       height: auto;
       border-radius: 6px;
-      margin-top: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    #journal-gallery p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
     }
   </style>
  </head>
@@ -95,14 +96,20 @@
 
   <div class="map-wrapper">
     <div id="map"></div>
-
     <div id="stats">
       <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
       <p id="trip-speed">Average Trip Speed: …</p>
     </div>
   </div>
 
-  <section id="journal"></section>
+  <section id="journal-gallery">
+    <img src="images/day1a.jpg" alt="Day 1a">
+    <img src="images/day1b.jpg" alt="Day 1b">
+    <p>Camped in the Redwoods. Got rained on all night, but the sunrise made it worth it. My socks were less thrilled.</p>
+    <img src="images/day2a.jpg" alt="Day 2a">
+    <img src="images/day2b.jpg" alt="Day 2b">
+    <p>Saw a sea lion that stared at me like I owed it money. Coastal magic at its finest.</p>
+  </section>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@mapbox/polyline"></script>
@@ -167,41 +174,6 @@
         document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
         document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
       });
-
-    const journalEntries = [
-      {
-        date: "2025-07-07",
-        text: "Started the trip! Left from Seattle and hit the coast. Saw a seal within the first 20 minutes.",
-        image: ["images/day1a.jpg", "images/day1b.jpg"]
-      },
-      {
-        date: "2025-07-08",
-        text: "Camped in the Redwoods. Got rained on all night, but the sunrise made it worth it.",
-        image: ["images/day1a.jpg", "images/day1b.jpg"]
-      }
-    ];
-
-    function renderJournal(entries) {
-      const journalContainer = document.getElementById("journal");
-      journalContainer.innerHTML = "";
-
-      entries.forEach(entry => {
-        const entryDiv = document.createElement("div");
-        entryDiv.classList.add("entry");
-
-        entryDiv.innerHTML = `
-          <h3>${entry.date}</h3>
-          <p>${entry.text}</p>
-           ${entry.images
-            .map(src => `<img src="${src}" alt="Journal image for ${entry.date}">`)
-            .join('')}
-      `;
-
-        journalContainer.appendChild(entryDiv);
-      });
-    }
-
-    renderJournal(journalEntries);
   </script>
  </body>
 </html>
