@@ -172,12 +172,12 @@
       {
         date: "2025-07-07",
         text: "Started the trip! Left from Seattle and hit the coast. Saw a seal within the first 20 minutes.",
-        image: "images/day1.jpg"
+        image: ["images/day1a.jpg", "images/day1b.jpg"]
       },
       {
         date: "2025-07-08",
         text: "Camped in the Redwoods. Got rained on all night, but the sunrise made it worth it.",
-        image: "images/day2.jpg"
+        image: ["images/day1a.jpg", "images/day1b.jpg"]
       }
     ];
 
@@ -192,8 +192,10 @@
         entryDiv.innerHTML = `
           <h3>${entry.date}</h3>
           <p>${entry.text}</p>
-          ${entry.image ? `<img src="${entry.image}" alt="Journal image for ${entry.date}">` : ""}
-        `;
+           ${entry.images
+            .map(src => `<img src="${src}" alt="Journal image for ${entry.date}">`)
+            .join('')}
+      `;
 
         journalContainer.appendChild(entryDiv);
       });
