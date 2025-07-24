@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Where is Michael?</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans', sans-serif;
+      text-align: center;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .map-wrapper {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 10px;
+      position: relative;
+      aspect-ratio: 16 / 9;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    #stats {
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 8px 16px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .controls {
+      text-align: center;
+      margin: 10px;
+    }
+
+    button {
+      margin: 0 5px;
+      padding: 6px 12px;
+    }
+
+    #journal {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+      font-family: 'Noto Sans', sans-serif;
+      text-align: left;
+    }
+
+    #journal .entry {
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    #journal img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-top: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+ </head>
+ <body>
+  <div class="controls">
+    <button id="filter-all">Show All</button>
+    <button id="filter-bike">Bike Only</button>
+    <button id="filter-run">Run Only</button>
+  </div>
+
+  <div class="map-wrapper">
+    <div id="map"></div>
+
+    <div id="stats">
+      <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
+      <p id="trip-speed">Average Trip Speed: …</p>
+    </div>
+  </div>
+
+  <section id="journal"></section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@mapbox/polyline"></script>
+  <script>
+    const map = L.map('map').setView([39, -123], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let allLayers = [];
+
+    function drawActivities(data, filterType) {
+      allLayers.forEach(layer => map.removeLayer(layer));
+      allLayers = [];
+
+      data.forEach(activity => {
+        if (
+          activity.map &&
+          activity.map.summary_polyline &&
+          (!filterType || activity.type.toLowerCase() === filterType)
+        ) {
+          const coords = polyline.decode(activity.map.summary_polyline);
+          const latlngs = coords.map(p => [p[0], p[1]]);
+          const color = activity.type.toLowerCase() === 'run' ? 'red' : 'blue';
+          const layer = L.polyline(latlngs, { color, weight: 2 }).addTo(map);
+          allLayers.push(layer);
+        }
+      });
+    }
+
+    function calculateTripStats(data) {
+      const tripStart = new Date('2025-07-07T00:00:00Z');
+      let totalDistance = 0;
+      let totalTime = 0;
+
+      data.forEach(activity => {
+        const activityDate = new Date(activity.start_date);
+        if (
+          activityDate >= tripStart &&
+          activity.type.toLowerCase() === 'ride'
+        ) {
+          totalDistance += activity.distance;
+          totalTime += activity.moving_time;
+        }
+      });
+
+      const distanceMiles = totalDistance / 1609.34;
+      const avgSpeed = totalTime > 0 ? (distanceMiles / (totalTime / 3600)) : 0;
+
+      document.getElementById('trip-distance').textContent =
+        `Pacific Coast Distance Traveled: ${distanceMiles.toFixed(1)} mi`;
+      document.getElementById('trip-speed').textContent =
+        `Average Trip Speed: ${avgSpeed.toFixed(1)} mph`;
+    }
+
+    fetch('data/activities.json')
+      .then(response => response.json())
+      .then(data => {
+        drawActivities(data);
+        calculateTripStats(data);
+        document.getElementById('filter-all').addEventListener('click', () => drawActivities(data));
+        document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
+        document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
+      });
+
+    const journalEntries = [
+      {
+        date: "2025-07-07",
+        text: "Started the trip! Left from Seattle and hit the coast. Saw a seal within the first 20 minutes.",
+        image: "images/day1.jpg"
+      },
+      {
+        date: "2025-07-08",
+        text: "Camped in the Redwoods. Got rained on all night, but the sunrise made it worth it.",
+        image: "images/day2.jpg"
+      }
+    ];
+
+    function renderJournal(entries) {
+      const journalContainer = document.getElementById("journal");
+      journalContainer.innerHTML = "";
+
+      entries.forEach(entry => {
+        const entryDiv = document.createElement("div");
+        entryDiv.classList.add("entry");
+
+        entryDiv.innerHTML = `
+          <h3>${entry.date}</h3>
+          <p>${entry.text}</p>
+          ${entry.image ? `<img src="${entry.image}" alt="Journal image for ${entry.date}">` : ""}
+        `;
+
+        journalContainer.appendChild(entryDiv);
+      });
+    }
+
+    renderJournal(journalEntries);
+  </script>
+ </body>
+</html>
