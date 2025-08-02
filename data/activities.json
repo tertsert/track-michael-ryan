@@ -24832,5 +24832,67 @@
     "pr_count": 0,
     "total_photo_count": 3,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Evening Run",
+    "distance": 1610.8,
+    "moving_time": 682,
+    "elapsed_time": 719,
+    "total_elevation_gain": 29.2,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 15314471800,
+    "start_date": "2025-08-02T03:28:27Z",
+    "start_date_local": "2025-08-01T20:28:27Z",
+    "timezone": "(GMT-08:00) America/Los_Angeles",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15314471800",
+      "summary_polyline": "azmdFhlujVCHKHSVMTSb@GVIFINUNIPGb@@XDL?HDFLFFHf@XTJXRHDn@p@LFPTJHDJHDCF?PBBBJT\\`@\\CTGPFBJZNFJLJ?Zp@VN\\LJLCRMV?HMTALU`AGD]bAMPMRSh@GHIXS\\CHS^GPGFGNWr@e@|@D?Vc@H[NWLW@GDETm@Za@`C}FFYEIM?CCQSNFHN@d@]~@EXKFSh@GDGZE@EJITKJGPDHPJBDHHBFJFHJj@\\@HU`@KLC@CJ?TE?ECCBAHFHCBGCEDBDAFSPBPCFOFG^a@~@SVAJKRKBCAXOL]BEPc@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      37.595371,
+      -122.503247
+    ],
+    "end_latlng": [
+      37.59478,
+      -122.510554
+    ],
+    "average_speed": 2.362,
+    "max_speed": 3.62,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 27.8,
+    "elev_low": 3.2,
+    "upload_id": 16354612437,
+    "upload_id_str": "16354612437",
+    "external_id": "2C5A2E23-EE08-46FC-B745-3DC36EBDFCAB-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false
   }
 ]
