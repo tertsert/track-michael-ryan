@@ -7,6 +7,7 @@
   <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
     html, body {
       margin: 0;
       padding: 0;
@@ -14,10 +15,11 @@
       background: #fafafa;
       text-align: center;
     }
+
     /* Top framed map */
     .map-wrapper {
       max-width: 1000px;
-      margin: 20px auto;
+      margin: 20px auto 8px;
       padding: 0 10px;
       position: relative;
       height: 500px;
@@ -32,22 +34,42 @@
       border-radius: 6px;
       z-index: 1;
     }
-    #stats {
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 8px 16px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      position: absolute;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
+
+    /* Stats panel below the map (not overlay) */
+    .stats-panel {
+      max-width: 1000px;
+      margin: 0 auto 24px;
+      padding: 0 16px;
     }
+    .stats-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      padding: 14px;
+      text-align: left;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+      display: block;
+    }
+    .stat-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111;
+    }
+
     /* Feed styles */
     #feed {
       max-width: 1000px;
-      margin: 40px auto 80px;
+      margin: 16px auto 80px;
       padding: 0 16px;
       text-align: left;
     }
@@ -94,14 +116,30 @@
   </style>
 </head>
 <body>
+  <!-- Main Map -->
   <div class="map-wrapper">
     <div id="map"></div>
-    <div id="stats">
-      <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
-      <p id="trip-speed">Average Trip Speed: …</p>
-    </div>
   </div>
 
+  <!-- Stats below the map -->
+  <section class="stats-panel">
+    <div class="stats-card" id="stats">
+      <div class="stat">
+        <span class="stat-label">Pacific Coast Distance Traveled</span>
+        <div class="stat-value" id="trip-distance">…</div>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Average Trip Speed</span>
+        <div class="stat-value" id="trip-speed">…</div>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Total Elevation Gain</span>
+        <div class="stat-value" id="trip-elev">…</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feed -->
   <section id="feed"></section>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -109,7 +147,7 @@
   <script>
     const TRIP_START = new Date('2025-07-07T00:00:00Z');
 
-    // === Main map (now shows ONLY trip rides) ===
+    // === Main map === (trip rides only)
     const map = L.map('map').setView([39, -123], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -117,18 +155,15 @@
 
     let mapLayers = [];
     function drawTripRidesOnMainMap(data) {
-      // clear old layers
       mapLayers.forEach(l => map.removeLayer(l));
       mapLayers = [];
 
-      // filter rides since trip start
       const rides = data.filter(a =>
         a?.type?.toLowerCase() === 'ride' &&
         new Date(a.start_date) >= TRIP_START &&
         a?.map?.summary_polyline
       );
 
-      // draw
       let bounds;
       rides.forEach(a => {
         const coords = polyline.decode(a.map.summary_polyline);
@@ -141,73 +176,86 @@
       if (bounds) map.fitBounds(bounds, { padding: [20, 20] });
     }
 
-    // === Stats (rides since trip start) ===
-    function calculateTripStats(data) {
-      let totalDistance = 0; // meters
-      let totalTime = 0;     // seconds
-      data.forEach(a => {
-        const d = new Date(a.start_date);
-        if (d >= TRIP_START && a.type?.toLowerCase() === 'ride') {
-          totalDistance += a.distance;
-          totalTime += a.moving_time;
-        }
-      });
-      const miles = totalDistance / 1609.34;
-      const mph = totalTime > 0 ? (miles / (totalTime / 3600)) : 0;
-      document.getElementById('trip-distance').textContent =
-        `Pacific Coast Distance Traveled: ${miles.toFixed(1)} mi`;
-      document.getElementById('trip-speed').textContent =
-        `Average Trip Speed: ${mph.toFixed(1)} mph`;
-    }
-
-    // === Feed helpers ===
-    function formatMiles(m) { return (m / 1609.34).toFixed(1); }
-    function formatTime(s) {
+    // === Helpers ===
+    function milesFromMeters(m){ return m / 1609.34; }
+    function feetFromMeters(m){ return m * 3.28084; }
+    function formatMiles(m){ return milesFromMeters(m).toFixed(1); }
+    function formatTime(s){
       const h = Math.floor(s / 3600); const m = Math.round((s % 3600) / 60);
       return h > 0 ? `${h}h ${m}m` : `${m}m`;
     }
-    function avgMph(meters, seconds) {
-      if (!seconds) return '0.0';
-      const miles = meters / 1609.34;
-      return (miles / (seconds / 3600)).toFixed(1);
+    function avgMph(meters, seconds){
+      if (!seconds) return 0;
+      return milesFromMeters(meters) / (seconds / 3600);
     }
-    function formatDate(iso) {
+    function formatDate(iso){
       try {
         const d = new Date(iso);
         return d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
       } catch { return iso; }
     }
-    function primaryPhotoUrl(activity) {
+    // Day number: days since TRIP_START (inclusive), based on UTC date
+    function dayNumberFromTripStart(iso){
+      const d = new Date(iso);
+      const rideUTC = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+      const startUTC = Date.UTC(TRIP_START.getUTCFullYear(), TRIP_START.getUTCMonth(), TRIP_START.getUTCDate());
+      const diffDays = Math.floor((rideUTC - startUTC) / 86400000);
+      return diffDays + 1; // Day 1 = Jul 7
+    }
+    function primaryPhotoUrl(activity){
       try {
         const urls = activity?.photos?.primary?.urls;
         return urls?.x1200 || urls?.x600 || urls?.x300 || null;
       } catch { return null; }
     }
 
-    // === Feed (bike-only, since start; NEWEST → OLDEST) ===
+    // === Stats (distance mi, avg mph, total elev ft) ===
+    function calculateTripStats(data) {
+      let totalDistanceM = 0;  // meters
+      let totalTimeS = 0;      // seconds
+      let totalElevM = 0;      // meters
+
+      data.forEach(a => {
+        const d = new Date(a.start_date);
+        if (d >= TRIP_START && a.type?.toLowerCase() === 'ride') {
+          totalDistanceM += a.distance || 0;
+          totalTimeS += a.moving_time || 0;
+          totalElevM += a.total_elevation_gain || 0;
+        }
+      });
+
+      const miles = milesFromMeters(totalDistanceM);
+      const mph = avgMph(totalDistanceM, totalTimeS);
+      const elevFeet = feetFromMeters(totalElevM);
+
+      document.getElementById('trip-distance').textContent = `${miles.toFixed(1)} mi`;
+      document.getElementById('trip-speed').textContent = `${mph.toFixed(1)} mph`;
+      document.getElementById('trip-elev').textContent = `${Math.round(elevFeet).toLocaleString()} ft`;
+    }
+
+    // === Feed (bike-only, since start; NEWEST → OLDEST; Day N by calendar) ===
     function renderFeed(data) {
       const c = document.getElementById('feed');
       c.innerHTML = '';
 
-      // chronological to assign Day N, then reverse for display
-      const ridesChrono = data
+      const rides = data
         .filter(a =>
           a?.type?.toLowerCase() === 'ride' &&
           new Date(a.start_date) >= TRIP_START
         )
-        .sort((a,b) => new Date(a.start_date) - new Date(b.start_date))
-        .map((a, idx) => ({ ...a, __day: idx + 1 }));
+        // newest first for display
+        .sort((a,b) => new Date(b.start_date) - new Date(a.start_date))
+        // attach Day N based on calendar days since trip start
+        .map(a => ({ ...a, __day: dayNumberFromTripStart(a.start_date) }));
 
-      const items = ridesChrono.slice().reverse(); // newest first
-
-      items.forEach((a, idx) => {
+      rides.forEach((a, idx) => {
         const card = document.createElement('article');
         card.className = 'feed-item';
 
         const dateStr = formatDate(a.start_date);
-        const dist = formatMiles(a.distance);
-        const speed = avgMph(a.distance, a.moving_time);
-        const timeStr = formatTime(a.moving_time);
+        const dist = formatMiles(a.distance || 0);
+        const speed = avgMph(a.distance || 0, a.moving_time || 0).toFixed(1);
+        const timeStr = formatTime(a.moving_time || 0);
 
         const header = document.createElement('div');
         header.className = 'feed-header';
@@ -294,7 +342,7 @@
       .then(data => {
         drawTripRidesOnMainMap(data);  // main map = trip rides only
         calculateTripStats(data);      // stats = trip rides only
-        renderFeed(data);              // feed = newest → oldest (ride-only, trip-only)
+        renderFeed(data);              // feed = newest → oldest, Day N by calendar
       })
       .catch(err => console.error('Failed to load activities.json', err));
   </script>
