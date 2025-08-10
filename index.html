@@ -1,189 +1,381 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Where is Michael?</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet"/>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  <head>
+    <title>Where is Michael?</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans', sans-serif;
-      text-align: center;
-    }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Noto Sans", sans-serif;
+        text-align: center;
+      }
 
-    .map-wrapper {
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 0 10px;
-      position: relative;
-      height: 500px;
-      min-height: 300px;
-      overflow: hidden;
-    }
+      .controls {
+        text-align: center;
+        margin: 10px;
+      }
 
-    #map {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 3px;
-      z-index: 1;
-    }
+      button {
+        margin: 0 5px;
+        padding: 6px 12px;
+      }
 
-    #stats {
-      font-size: 14px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 8px 16px;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      position: absolute;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-    }
+      /* ===== Top framed map (unchanged behavior) ===== */
+      .map-wrapper {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 10px;
+        position: relative;
+        height: 500px;        /* stable height */
+        min-height: 300px;
+        overflow: hidden;
+      }
 
-    .controls {
-      text-align: center;
-      margin: 10px;
-    }
+      #map {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        z-index: 1;
+      }
 
-    button {
-      margin: 0 5px;
-      padding: 6px 12px;
-    }
+      #stats {
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 8px 16px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
 
-    #journal-gallery {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      font-family: 'Noto Sans', sans-serif;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
+      /* ===== Feed styles ===== */
+      #feed {
+        max-width: 1000px;
+        margin: 40px auto 80px;
+        padding: 0 16px;
+        text-align: left;
+      }
 
-    #journal-gallery img {
-      width: 100%;
-      height: auto;
-    }
+      .feed-item {
+        border: 1px solid #e6e6e6;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        padding: 16px;
+        margin-bottom: 18px;
+        background: #fff;
+      }
 
-    #journal-gallery p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #333;
-    }
-  </style>
- </head>
- <body>
-  <div class="controls">
-    <button id="filter-all">Show All</button>
-    <button id="filter-bike">Bike Only</button>
-    <button id="filter-run">Run Only</button>
-  </div>
+      .feed-header {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+      }
 
-  <div class="map-wrapper">
-    <div id="map"></div>
-    <div id="stats">
-      <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
-      <p id="trip-speed">Average Trip Speed: …</p>
+      .feed-title {
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .feed-date {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .feed-stats {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 12px;
+      }
+
+      .feed-photo {
+        width: 100%;
+        border-radius: 8px;
+        margin: 10px 0 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      }
+
+      .feed-map {
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .empty-note {
+        max-width: 1000px;
+        margin: 40px auto 80px;
+        padding: 0 16px;
+        color: #666;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="controls">
+      <button id="filter-all">Show All</button>
+      <button id="filter-bike">Bike Only</button>
+      <button id="filter-run">Run Only</button>
     </div>
-  </div>
 
-  <section id="journal-gallery">
-    <img src="images/IMG_0207.JPG">
-    <img src="images/IMG_0208.JPG">
-    <img src="images/IMG_0210.JPG">
-    <img src="images/IMG_0211.JPG">
-    <img src="images/IMG_0212.JPG">
-    <img src="images/IMG_0213.JPG">
-    <img src="images/IMG_0265.JPG">
-    <img src="images/IMG_0266.JPG">
-    <img src="images/IMG_0267.JPG">
-    <img src="images/IMG_0268.JPG">
-    <img src="images/IMG_0269.JPG">
-    <img src="images/IMG_0281.JPG">
-    <img src="images/IMG_0282.JPG">
-    <img src="images/IMG_0285.JPG">
-    <img src="images/IMG_0286.JPG">
+    <!-- ===== Top Map (left as-is) ===== -->
+    <div class="map-wrapper">
+      <div id="map"></div>
+      <div id="stats">
+        <p id="trip-distance">Pacific Coast Distance Traveled: …</p>
+        <p id="trip-speed">Average Trip Speed: …</p>
+      </div>
+    </div>
 
-   
-    <p>Thanks for checking out my adventures! Don't forget to put your phone down and have your own :)</p>
-  </section>
+    <!-- ===== Ride Feed (below the map) ===== -->
+    <section id="feed"></section>
+    <div id="feed-empty" class="empty-note" style="display:none;">
+      No bike activities found since July 7, 2025.
+    </div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/@mapbox/polyline"></script>
-  <script>
-    const map = L.map('map').setView([39, -123], 5);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/@mapbox/polyline"></script>
+    <script>
+      // --- Main map setup (unchanged) ---
+      const map = L.map("map").setView([39, -123], 5);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
 
-    let allLayers = [];
+      let allLayers = [];
 
-    function drawActivities(data, filterType) {
-      allLayers.forEach(layer => map.removeLayer(layer));
-      allLayers = [];
+      function drawActivities(data, filterType) {
+        allLayers.forEach((layer) => map.removeLayer(layer));
+        allLayers = [];
 
-      data.forEach(activity => {
-        if (
-          activity.map &&
-          activity.map.summary_polyline &&
-          (!filterType || activity.type.toLowerCase() === filterType)
-        ) {
-          const coords = polyline.decode(activity.map.summary_polyline);
-          const latlngs = coords.map(p => [p[0], p[1]]);
-          const color = activity.type.toLowerCase() === 'run' ? 'red' : 'blue';
-          const layer = L.polyline(latlngs, { color, weight: 2 }).addTo(map);
-          allLayers.push(layer);
+        data.forEach((activity) => {
+          if (
+            activity.map &&
+            activity.map.summary_polyline &&
+            (!filterType || activity.type.toLowerCase() === filterType)
+          ) {
+            const coords = polyline.decode(activity.map.summary_polyline);
+            const latlngs = coords.map((p) => [p[0], p[1]]);
+            const color =
+              activity.type.toLowerCase() === "run" ? "red" : "blue";
+            const layer = L.polyline(latlngs, { color, weight: 2 }).addTo(map);
+            allLayers.push(layer);
+          }
+        });
+      }
+
+      function calculateTripStats(data) {
+        const tripStart = new Date("2025-07-07T00:00:00Z");
+        let totalDistance = 0; // meters
+        let totalTime = 0; // seconds
+
+        data.forEach((activity) => {
+          const activityDate = new Date(activity.start_date);
+          if (
+            activityDate >= tripStart &&
+            activity.type.toLowerCase() === "ride"
+          ) {
+            totalDistance += activity.distance;
+            totalTime += activity.moving_time;
+          }
+        });
+
+        const distanceMiles = totalDistance / 1609.34;
+        const avgSpeed =
+          totalTime > 0 ? distanceMiles / (totalTime / 3600) : 0;
+
+        document.getElementById(
+          "trip-distance"
+        ).textContent = `Pacific Coast Distance Traveled: ${distanceMiles.toFixed(
+          1
+        )} mi`;
+        document.getElementById(
+          "trip-speed"
+        ).textContent = `Average Trip Speed: ${avgSpeed.toFixed(1)} mph`;
+      }
+
+      // --- Feed rendering ---
+      function formatMiles(meters) {
+        return (meters / 1609.34).toFixed(1);
+      }
+      function formatTime(sec) {
+        const h = Math.floor(sec / 3600);
+        const m = Math.round((sec % 3600) / 60);
+        return h > 0 ? `${h}h ${m}m` : `${m}m`;
+      }
+      function avgMph(meters, seconds) {
+        if (!seconds) return "0.0";
+        const miles = meters / 1609.34;
+        return (miles / (seconds / 3600)).toFixed(1);
+      }
+      function formatDate(iso) {
+        try {
+          const d = new Date(iso);
+          return d.toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+        } catch {
+          return iso;
         }
-      });
-    }
+      }
 
-    function calculateTripStats(data) {
-      const tripStart = new Date('2025-07-07T00:00:00Z');
-      let totalDistance = 0;
-      let totalTime = 0;
-
-      data.forEach(activity => {
-        const activityDate = new Date(activity.start_date);
-        if (
-          activityDate >= tripStart &&
-          activity.type.toLowerCase() === 'ride'
-        ) {
-          totalDistance += activity.distance;
-          totalTime += activity.moving_time;
+      function primaryPhotoUrl(activity) {
+        // Strava summary activities sometimes include a primary photo
+        // at activity.photos.primary.urls.x600 (or other sizes). Fail gracefully.
+        try {
+          const urls = activity?.photos?.primary?.urls;
+          // Try common sizes in descending order
+          return urls?.x1200 || urls?.x600 || urls?.x300 || null;
+        } catch {
+          return null;
         }
-      });
+      }
 
-      const distanceMiles = totalDistance / 1609.34;
-      const avgSpeed = totalTime > 0 ? (distanceMiles / (totalTime / 3600)) : 0;
+      function renderFeed(activities) {
+        const container = document.getElementById("feed");
+        const empty = document.getElementById("feed-empty");
+        container.innerHTML = "";
 
-      document.getElementById('trip-distance').textContent =
-        `Pacific Coast Distance Traveled: ${distanceMiles.toFixed(1)} mi`;
-      document.getElementById('trip-speed').textContent =
-        `Average Trip Speed: ${avgSpeed.toFixed(1)} mph`;
-    }
+        if (!activities.length) {
+          empty.style.display = "block";
+          return;
+        }
+        empty.style.display = "none";
 
-    fetch('data/activities.json')
-      .then(response => response.json())
-      .then(data => {
-        drawActivities(data);
-        calculateTripStats(data);
-        document.getElementById('filter-all').addEventListener('click', () => drawActivities(data));
-        document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
-        document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
-      });
-  </script>
- </body>
+        activities.forEach((a) => {
+          const card = document.createElement("article");
+          card.className = "feed-item";
+
+          const title = a.name || "Bike Ride";
+          const dateStr = formatDate(a.start_date);
+
+          // header
+          const header = document.createElement("div");
+          header.className = "feed-header";
+          header.innerHTML = `
+            <div class="feed-title">${title}</div>
+            <div class="feed-date">• ${dateStr}</div>
+          `;
+
+          // stats
+          const stats = document.createElement("div");
+          stats.className = "feed-stats";
+          stats.textContent =
+            `Distance: ${formatMiles(a.distance)} mi  •  ` +
+            `Time: ${formatTime(a.moving_time)}  •  ` +
+            `Avg: ${avgMph(a.distance, a.moving_time)} mph`;
+
+          // optional photo
+          const photoUrl = primaryPhotoUrl(a);
+          let photoEl = null;
+          if (photoUrl) {
+            photoEl = document.createElement("img");
+            photoEl.className = "feed-photo";
+            photoEl.src = photoUrl;
+            photoEl.alt = `${title} photo`;
+            photoEl.loading = "lazy";
+          }
+
+          // mini map for the activity
+          const miniMapId = `feed-map-${a.id}`;
+          const mm = document.createElement("div");
+          mm.id = miniMapId;
+          mm.className = "feed-map";
+
+          card.appendChild(header);
+          card.appendChild(stats);
+          if (photoEl) card.appendChild(photoEl);
+          card.appendChild(mm);
+          container.appendChild(card);
+
+          // draw the activity route in the mini map
+          if (a.map && a.map.summary_polyline) {
+            const mini = L.map(miniMapId, {
+              attributionControl: false,
+              zoomControl: false,
+              dragging: true,
+              scrollWheelZoom: false,
+              doubleClickZoom: false,
+              boxZoom: false,
+              keyboard: false,
+              tap: false,
+            });
+
+            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              attribution: "",
+            }).addTo(mini);
+
+            const coords = polyline.decode(a.map.summary_polyline);
+            const latlngs = coords.map((p) => [p[0], p[1]]);
+            const route = L.polyline(latlngs, { color: "blue", weight: 2 }).addTo(mini);
+            try {
+              mini.fitBounds(route.getBounds(), { padding: [12, 12] });
+            } catch {}
+          } else {
+            // If no polyline, hide the map box
+            mm.style.display = "none";
+          }
+        });
+      }
+
+      // --- Load activities and wire everything together ---
+      const TRIP_START = new Date("2025-07-07T00:00:00Z");
+
+      fetch("data/activities.json")
+        .then((r) => r.json())
+        .then((data) => {
+          // draw all on the big map, unfiltered
+          drawActivities(data);
+
+          // overlay stats for trip since July 7 — rides only
+          calculateTripStats(data);
+
+          // filter feed to rides since July 7
+          const feedItems = data
+            .filter(
+              (a) =>
+                a?.type?.toLowerCase() === "ride" &&
+                new Date(a.start_date) >= TRIP_START
+            )
+            // newest first
+            .sort(
+              (a, b) => new Date(b.start_date) - new Date(a.start_date)
+            );
+
+          renderFeed(feedItems);
+
+          // Keep your existing filter buttons behavior on the big map
+          document
+            .getElementById("filter-all")
+            .addEventListener("click", () => drawActivities(data));
+          document
+            .getElementById("filter-bike")
+            .addEventListener("click", () => drawActivities(data, "ride"));
+          document
+            .getElementById("filter-run")
+            .addEventListener("click", () => drawActivities(data, "run"));
+        })
+        .catch((e) => {
+          console.error("Failed to load activities.json", e);
+          document.getElementById("feed-empty").style.display = "block";
+        });
+    </script>
+  </body>
 </html>
