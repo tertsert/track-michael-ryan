@@ -14,6 +14,7 @@
       background: #fafafa;
       text-align: center;
     }
+    /* Top framed map */
     .map-wrapper {
       max-width: 1000px;
       margin: 20px auto;
@@ -42,12 +43,6 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
-    }
-    .controls { margin: 10px; }
-    button {
-      margin: 0 5px;
-      padding: 6px 12px;
-      cursor: pointer;
     }
     /* Feed styles */
     #feed {
@@ -99,12 +94,6 @@
   </style>
 </head>
 <body>
-  <div class="controls">
-    <button id="filter-all">Show All</button>
-    <button id="filter-bike">Bike Only</button>
-    <button id="filter-run">Run Only</button>
-  </div>
-
   <div class="map-wrapper">
     <div id="map"></div>
     <div id="stats">
@@ -120,32 +109,39 @@
   <script>
     const TRIP_START = new Date('2025-07-07T00:00:00Z');
 
-    // === Main map (unchanged style) ===
+    // === Main map (now shows ONLY trip rides) ===
     const map = L.map('map').setView([39, -123], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    let allLayers = [];
+    let mapLayers = [];
+    function drawTripRidesOnMainMap(data) {
+      // clear old layers
+      mapLayers.forEach(l => map.removeLayer(l));
+      mapLayers = [];
 
-    function drawActivities(data, filterType) {
-      allLayers.forEach(layer => map.removeLayer(layer));
-      allLayers = [];
-      data.forEach(activity => {
-        if (
-          activity.map &&
-          activity.map.summary_polyline &&
-          (!filterType || activity.type.toLowerCase() === filterType)
-        ) {
-          const coords = polyline.decode(activity.map.summary_polyline);
-          const latlngs = coords.map(p => [p[0], p[1]]);
-          const color = activity.type.toLowerCase() === 'run' ? 'red' : 'blue';
-          const layer = L.polyline(latlngs, { color, weight: 2 }).addTo(map);
-          allLayers.push(layer);
-        }
+      // filter rides since trip start
+      const rides = data.filter(a =>
+        a?.type?.toLowerCase() === 'ride' &&
+        new Date(a.start_date) >= TRIP_START &&
+        a?.map?.summary_polyline
+      );
+
+      // draw
+      let bounds;
+      rides.forEach(a => {
+        const coords = polyline.decode(a.map.summary_polyline);
+        const latlngs = coords.map(p => [p[0], p[1]]);
+        const layer = L.polyline(latlngs, { color: 'blue', weight: 2 }).addTo(map);
+        mapLayers.push(layer);
+        bounds = bounds ? bounds.extend(layer.getBounds()) : layer.getBounds();
       });
+
+      if (bounds) map.fitBounds(bounds, { padding: [20, 20] });
     }
 
+    // === Stats (rides since trip start) ===
     function calculateTripStats(data) {
       let totalDistance = 0; // meters
       let totalTime = 0;     // seconds
@@ -182,19 +178,19 @@
       } catch { return iso; }
     }
     function primaryPhotoUrl(activity) {
-      // Uses Strava summary primary photo if present
       try {
         const urls = activity?.photos?.primary?.urls;
         return urls?.x1200 || urls?.x600 || urls?.x300 || null;
       } catch { return null; }
     }
 
-    function renderFeed(activities) {
+    // === Feed (bike-only, since start; NEWEST → OLDEST) ===
+    function renderFeed(data) {
       const c = document.getElementById('feed');
       c.innerHTML = '';
 
-      // rides only, since Jul 7; chronological to assign Day N
-      const ridesSince = activities
+      // chronological to assign Day N, then reverse for display
+      const ridesChrono = data
         .filter(a =>
           a?.type?.toLowerCase() === 'ride' &&
           new Date(a.start_date) >= TRIP_START
@@ -202,8 +198,7 @@
         .sort((a,b) => new Date(a.start_date) - new Date(b.start_date))
         .map((a, idx) => ({ ...a, __day: idx + 1 }));
 
-      // display newest first
-      const items = ridesSince.slice().reverse();
+      const items = ridesChrono.slice().reverse(); // newest first
 
       items.forEach((a, idx) => {
         const card = document.createElement('article');
@@ -214,7 +209,6 @@
         const speed = avgMph(a.distance, a.moving_time);
         const timeStr = formatTime(a.moving_time);
 
-        // header
         const header = document.createElement('div');
         header.className = 'feed-header';
         header.innerHTML = `
@@ -222,7 +216,6 @@
           <div class="feed-date">• ${dateStr}</div>
         `;
 
-        // stats
         const stats = document.createElement('div');
         stats.className = 'feed-stats';
         stats.textContent = `Distance: ${dist} mi  •  Time: ${timeStr}  •  Avg: ${speed} mph`;
@@ -262,7 +255,7 @@
             tap: false
           });
 
-          // === FREE, NO-TOKEN TILE STYLE ===
+          // Free, no‑token tiles (CARTO Positron)
           L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             subdomains: 'abcd',
             attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
@@ -283,7 +276,7 @@
           miniDiv.style.display = 'none';
         }
 
-        // optional “View on Strava” link
+        // View on Strava
         const view = document.createElement('a');
         view.href = `https://www.strava.com/activities/${a.id}`;
         view.target = '_blank';
@@ -295,20 +288,13 @@
       });
     }
 
-    // Load & wire up
+    // Load & render
     fetch('data/activities.json')
       .then(r => r.json())
       .then(data => {
-        drawActivities(data);       // big map (unfiltered)
-        calculateTripStats(data);   // overall stats since Jul 7 (rides only)
-        renderFeed(data);           // feed with Day N + mini maps
-
-        document.getElementById('filter-all')
-          .addEventListener('click', () => drawActivities(data));
-        document.getElementById('filter-bike')
-          .addEventListener('click', () => drawActivities(data, 'ride'));
-        document.getElementById('filter-run')
-          .addEventListener('click', () => drawActivities(data, 'run'));
+        drawTripRidesOnMainMap(data);  // main map = trip rides only
+        calculateTripStats(data);      // stats = trip rides only
+        renderFeed(data);              // feed = newest → oldest (ride-only, trip-only)
       })
       .catch(err => console.error('Failed to load activities.json', err));
   </script>
