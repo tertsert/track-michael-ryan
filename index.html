@@ -20,11 +20,16 @@
       padding: 0 10px;
       position: relative;
       height: 500px;
+      min-height: 300px;
+      overflow: hidden;
     }
     #map {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
-      border-radius: 3px;
+      border-radius: 6px;
+      z-index: 1;
     }
     #stats {
       font-size: 14px;
@@ -113,7 +118,9 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@mapbox/polyline"></script>
   <script>
-    const tripStart = new Date('2025-07-07T00:00:00Z');
+    const TRIP_START = new Date('2025-07-07T00:00:00Z');
+
+    // === Main map (unchanged style) ===
     const map = L.map('map').setView([39, -123], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -140,79 +147,170 @@
     }
 
     function calculateTripStats(data) {
-      let totalDistance = 0;
-      let totalTime = 0;
-      data.forEach(activity => {
-        const activityDate = new Date(activity.start_date);
-        if (activityDate >= tripStart && activity.type.toLowerCase() === 'ride') {
-          totalDistance += activity.distance;
-          totalTime += activity.moving_time;
+      let totalDistance = 0; // meters
+      let totalTime = 0;     // seconds
+      data.forEach(a => {
+        const d = new Date(a.start_date);
+        if (d >= TRIP_START && a.type?.toLowerCase() === 'ride') {
+          totalDistance += a.distance;
+          totalTime += a.moving_time;
         }
       });
-      const distanceMiles = totalDistance / 1609.34;
-      const avgSpeed = totalTime > 0 ? (distanceMiles / (totalTime / 3600)) : 0;
+      const miles = totalDistance / 1609.34;
+      const mph = totalTime > 0 ? (miles / (totalTime / 3600)) : 0;
       document.getElementById('trip-distance').textContent =
-        `Pacific Coast Distance Traveled: ${distanceMiles.toFixed(1)} mi`;
+        `Pacific Coast Distance Traveled: ${miles.toFixed(1)} mi`;
       document.getElementById('trip-speed').textContent =
-        `Average Trip Speed: ${avgSpeed.toFixed(1)} mph`;
+        `Average Trip Speed: ${mph.toFixed(1)} mph`;
     }
 
-    function renderFeed(data) {
-      const feedContainer = document.getElementById('feed');
-      feedContainer.innerHTML = '';
-      const filtered = data.filter(a => {
-        const date = new Date(a.start_date);
-        return date >= tripStart && a.type.toLowerCase() === 'ride';
-      }).sort((a, b) => new Date(a.start_date) - new Date(b.start_date));
+    // === Feed helpers ===
+    function formatMiles(m) { return (m / 1609.34).toFixed(1); }
+    function formatTime(s) {
+      const h = Math.floor(s / 3600); const m = Math.round((s % 3600) / 60);
+      return h > 0 ? `${h}h ${m}m` : `${m}m`;
+    }
+    function avgMph(meters, seconds) {
+      if (!seconds) return '0.0';
+      const miles = meters / 1609.34;
+      return (miles / (seconds / 3600)).toFixed(1);
+    }
+    function formatDate(iso) {
+      try {
+        const d = new Date(iso);
+        return d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
+      } catch { return iso; }
+    }
+    function primaryPhotoUrl(activity) {
+      // Uses Strava summary primary photo if present
+      try {
+        const urls = activity?.photos?.primary?.urls;
+        return urls?.x1200 || urls?.x600 || urls?.x300 || null;
+      } catch { return null; }
+    }
 
-      filtered.forEach((activity, index) => {
-        const dayNum = index + 1;
-        const activityDate = new Date(activity.start_date);
-        const dateStr = activityDate.toLocaleDateString();
-        const distMiles = (activity.distance / 1609.34).toFixed(1);
-        const avgSpeed = ((activity.distance / 1609.34) / (activity.moving_time / 3600)).toFixed(1);
+    function renderFeed(activities) {
+      const c = document.getElementById('feed');
+      c.innerHTML = '';
 
-        const item = document.createElement('div');
-        item.classList.add('feed-item');
+      // rides only, since Jul 7; chronological to assign Day N
+      const ridesSince = activities
+        .filter(a =>
+          a?.type?.toLowerCase() === 'ride' &&
+          new Date(a.start_date) >= TRIP_START
+        )
+        .sort((a,b) => new Date(a.start_date) - new Date(b.start_date))
+        .map((a, idx) => ({ ...a, __day: idx + 1 }));
 
-        item.innerHTML = `
-          <div class="feed-header">
-            <div class="feed-title">Day ${dayNum}</div>
-            <div class="feed-date">${dateStr}</div>
-          </div>
-          <div class="feed-stats">Distance: ${distMiles} mi | Avg Speed: ${avgSpeed} mph</div>
-          ${activity.photos && activity.photos.length > 0 ? activity.photos.map(p => `<img class="feed-photo" src="${p}" alt="photo">`).join('') : ''}
-          <div class="feed-map" id="feed-map-${index}"></div>
+      // display newest first
+      const items = ridesSince.slice().reverse();
+
+      items.forEach((a, idx) => {
+        const card = document.createElement('article');
+        card.className = 'feed-item';
+
+        const dateStr = formatDate(a.start_date);
+        const dist = formatMiles(a.distance);
+        const speed = avgMph(a.distance, a.moving_time);
+        const timeStr = formatTime(a.moving_time);
+
+        // header
+        const header = document.createElement('div');
+        header.className = 'feed-header';
+        header.innerHTML = `
+          <div class="feed-title">Day ${a.__day}</div>
+          <div class="feed-date">• ${dateStr}</div>
         `;
-        feedContainer.appendChild(item);
+
+        // stats
+        const stats = document.createElement('div');
+        stats.className = 'feed-stats';
+        stats.textContent = `Distance: ${dist} mi  •  Time: ${timeStr}  •  Avg: ${speed} mph`;
+
+        card.appendChild(header);
+        card.appendChild(stats);
+
+        // optional photo
+        const photoUrl = primaryPhotoUrl(a);
+        if (photoUrl) {
+          const img = document.createElement('img');
+          img.className = 'feed-photo';
+          img.src = photoUrl;
+          img.alt = `Photo for Day ${a.__day}`;
+          img.loading = 'lazy';
+          card.appendChild(img);
+        }
 
         // mini map
-        const miniMap = L.map(`feed-map-${index}`, {
-          zoomControl: false,
-          attributionControl: false
-        });
-        L.tileLayer('https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=YOUR_JAWG_ACCESS_TOKEN', {
-          attribution: '© OpenStreetMap contributors'
-        }).addTo(miniMap);
+        const miniId = `feed-map-${a.id || idx}`;
+        const miniDiv = document.createElement('div');
+        miniDiv.id = miniId;
+        miniDiv.className = 'feed-map';
+        card.appendChild(miniDiv);
 
-        const coords = polyline.decode(activity.map.summary_polyline);
-        const latlngs = coords.map(p => [p[0], p[1]]);
-        const color = 'blue';
-        L.polyline(latlngs, { color, weight: 3 }).addTo(miniMap);
-        miniMap.fitBounds(L.polyline(latlngs).getBounds());
+        c.appendChild(card);
+
+        if (a.map && a.map.summary_polyline) {
+          const mini = L.map(miniId, {
+            attributionControl: false,
+            zoomControl: false,
+            dragging: true,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            boxZoom: false,
+            keyboard: false,
+            tap: false
+          });
+
+          // === FREE, NO-TOKEN TILE STYLE ===
+          L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            subdomains: 'abcd',
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+          }).addTo(mini);
+
+          const coords = polyline.decode(a.map.summary_polyline);
+          const latlngs = coords.map(p => [p[0], p[1]]);
+          const route = L.polyline(latlngs, {
+            color: '#1e88e5',
+            weight: 2.5,
+            opacity: 0.9,
+            lineCap: 'round',
+            lineJoin: 'round'
+          }).addTo(mini);
+
+          try { mini.fitBounds(route.getBounds(), { padding: [12, 12] }); } catch {}
+        } else {
+          miniDiv.style.display = 'none';
+        }
+
+        // optional “View on Strava” link
+        const view = document.createElement('a');
+        view.href = `https://www.strava.com/activities/${a.id}`;
+        view.target = '_blank';
+        view.rel = 'noopener';
+        view.textContent = 'View on Strava';
+        view.style.display = 'inline-block';
+        view.style.marginTop = '8px';
+        card.appendChild(view);
       });
     }
 
+    // Load & wire up
     fetch('data/activities.json')
-      .then(res => res.json())
+      .then(r => r.json())
       .then(data => {
-        drawActivities(data);
-        calculateTripStats(data);
-        renderFeed(data);
-        document.getElementById('filter-all').addEventListener('click', () => drawActivities(data));
-        document.getElementById('filter-bike').addEventListener('click', () => drawActivities(data, 'ride'));
-        document.getElementById('filter-run').addEventListener('click', () => drawActivities(data, 'run'));
-      });
+        drawActivities(data);       // big map (unfiltered)
+        calculateTripStats(data);   // overall stats since Jul 7 (rides only)
+        renderFeed(data);           // feed with Day N + mini maps
+
+        document.getElementById('filter-all')
+          .addEventListener('click', () => drawActivities(data));
+        document.getElementById('filter-bike')
+          .addEventListener('click', () => drawActivities(data, 'ride'));
+        document.getElementById('filter-run')
+          .addEventListener('click', () => drawActivities(data, 'run'));
+      })
+      .catch(err => console.error('Failed to load activities.json', err));
   </script>
 </body>
 </html>
