@@ -25887,14 +25887,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "08/10/25",
+    "name": "doctor francis told me no potato chips or gum",
     "distance": 69911.9,
     "moving_time": 12736,
     "elapsed_time": 22592,
     "total_elevation_gain": 339.9,
     "type": "Ride",
     "sport_type": "Ride",
-    "workout_type": null,
+    "workout_type": 10,
     "id": 15416413736,
     "start_date": "2025-08-10T17:47:13Z",
     "start_date_local": "2025-08-10T10:47:13Z",
@@ -25916,8 +25916,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -25943,7 +25943,7 @@
     "external_id": "318684269.fit",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 4,
     "has_kudoed": false
   },
   {
@@ -25952,14 +25952,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "08/11/25",
+    "name": "camped in a ditch and got about 153 thorns in my tires",
     "distance": 92191.1,
     "moving_time": 20902,
     "elapsed_time": 31433,
     "total_elevation_gain": 601.8,
     "type": "Ride",
     "sport_type": "Ride",
-    "workout_type": null,
+    "workout_type": 10,
     "id": 15426571285,
     "start_date": "2025-08-11T14:34:05Z",
     "start_date_local": "2025-08-11T07:34:05Z",
@@ -25969,7 +25969,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 2,
-    "kudos_count": 0,
+    "kudos_count": 1,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -25981,8 +25981,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -26008,7 +26008,7 @@
     "external_id": "318987441.fit",
     "from_accepted_tag": false,
     "pr_count": 1,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false
   }
 ]
