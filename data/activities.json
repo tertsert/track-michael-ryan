@@ -26669,5 +26669,72 @@
     "total_photo_count": 0,
     "has_kudoed": false,
     "suffer_score": 25
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Morning Run",
+    "distance": 28977,
+    "moving_time": 13703,
+    "elapsed_time": 16047,
+    "total_elevation_gain": 916,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15494799384,
+    "start_date": "2025-08-17T16:39:27Z",
+    "start_date_local": "2025-08-17T09:39:27Z",
+    "timezone": "(GMT-08:00) America/Los_Angeles",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 2,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 3,
+    "photo_count": 0,
+    "map": {
+      "id": "a15494799384",
+      "summary_polyline": "gsblEpb_nU?}@v@{Bv@cKz@iDlCyGjD_DlDgAbC_DvAcAvBWjD`@`A]bDoDj@oAiAsAp@_CQmAZgBaBwBTmAa@}AP_Aa@eBTiA{@}Ei@e@aAwCc@oFA_BfB{ErAuAh@Mb@sBvB{B|@kCdGsJnAmFtAShEeE`DZa@iDT}@dGrAfCW`AfBpBf@`DkAb@mB_@OZN_@hB_DjAsBk@iAgB{BXqGwAY~@j@dDKPyBg@a@aD}@nBgCr@[dAsBdByAfFeEpEgDjFeDvBa@Ik@e@uArBkBl@mAfBeDyALiCkAoBz@yCnC{DeBwEd@_F_@}@kEoBaFoAgGR_@Oa@gAaFmBaMv@kCwA}@oDs@y@iCRuDYeDr@iBhAkHt@{DvBeCl@e@AqHwDkB_BWo@l@uE?g@c@w@jAqG[uDr@mAHcA]{CoCaD{Bf@iEWyBk@gE`AtEcA|Al@lE^hCe@rChDLzDu@hBZnDeBzAO`ANhA|@vBa@zAKvC`BjAd@`AjHlDzAa@pACpB_BxAc@pHs@vDmBdKEp@`Ap@tCtCjBjGSrCi@xDdArAv@j@hApGOjLhE`@x@c@~EbBrEuCzDy@dDnAhBKtCxChAVE~@_B`Bi@fB}BdAr@xCmBbCcErF{FtAwEbC}BVeAbCy@p@gBh@|CzBf@L[e@eDTu@fGvA~BUzDhCdDkAd@kBD~@y@pCwD`C{@lAQxBwDjMCjCXnAnE|ExJ~@rA~@~BtFxFxLzBfD`NpCfEm@dBLlKpE|G|@dCrBtIxEzBtD|BxADfEZx@jLdDxBhGf@zDpCzDvIfFjO`P~@hBxCxBvGjHdJdBxF|JP`BvAbBr@lEzAjEUdEh@|DfAvAkB|DDzAxBpA~@fBbA~D^LtAs@ZFLlCa@hAiBb@kAQyDxCcBo@a@d@iAk@Ym@y@dBu@JJxBoNxX}A`AeA@{Ay@g@w@m@oDs@{ACuAa@i@z@yDe@eDNyDe@oEkBgCh@m@CWsAeAk@gA}Be@WoBm@i@q@SsHTONhAA{@IyAlAkCOoAjA{ATgAr@}Ba@[NaArCOdB]JgKSkGyDiAKmBWiDFw@_@w@e@mF{G_H}EkIyAjC\\{Cc@_ChAaDDtDKmDHsH}Fo@kHJeAt@gAcAlBXhEUyElAoCU}@kAu@mEg@s@MyHiDcC[uAJeCkAiDq@wIgDqO[uGc@yJh@mEmEaHHuC}@m@qAqBkBqAqD`@fAuAgCe@JPxCnClC",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      33.605805,
+      -117.801524
+    ],
+    "end_latlng": [
+      33.604992,
+      -117.802993
+    ],
+    "average_speed": 2.115,
+    "max_speed": 4.143,
+    "average_cadence": 76.1,
+    "average_temp": 32,
+    "has_heartrate": true,
+    "average_heartrate": 139.8,
+    "max_heartrate": 185,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 314,
+    "elev_low": -21.6,
+    "upload_id": 16547443180,
+    "upload_id_str": "16547443180",
+    "external_id": "garmin_ping_470610816565",
+    "from_accepted_tag": false,
+    "pr_count": 1,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 138
   }
 ]
