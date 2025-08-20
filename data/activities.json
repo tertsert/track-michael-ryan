@@ -27024,8 +27024,8 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 7,
-    "comment_count": 4,
+    "kudos_count": 8,
+    "comment_count": 5,
     "athlete_count": 1,
     "photo_count": 0,
     "map": {
@@ -27065,5 +27065,72 @@
     "pr_count": 0,
     "total_photo_count": 2,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Afternoon Run",
+    "distance": 3132.4,
+    "moving_time": 1114,
+    "elapsed_time": 1485,
+    "total_elevation_gain": 26,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15530299666,
+    "start_date": "2025-08-20T23:07:36Z",
+    "start_date_local": "2025-08-20T16:07:36Z",
+    "timezone": "(GMT-08:00) America/Tijuana",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15530299666",
+      "summary_polyline": "o|peErviiUm@C]HIHCGYFKCG@CC@KI_@Dm@?WIo@@eBMo@BOJGp@@\\B\\Ct@QF_@GsAKqAGcBBu@EIESG}A@a@K{@Ac@@Od@QNDX?TA^IHFHAVMIqBIm@@O?q@Im@?c@DKpAKf@IL?h@Gd@?TBPEFh@?~@ThC?bADj@@VCZDR?^Pj@Ah@@PC^BL~@Er@KPBl@MpADt@Kf@C`@?b@GNGR@VAZFPIb@Kt@Ar@MnA?v@I`@@NDPC@AEAIFt@Kb@An@Gd@FjAU|@Id@DrAOPEVDJF@BA\\@JDAb@DNVTLHJJBHPPDEID@OFIJPPDFAB_Ar@CBCn@EJ}@t@SX[p@[h@u@fA_@n@a@h@OX[VSHoAPQCiB`@k@Gi@CoANkA@WFCCa@@iBP}CPc@?m@Fe@?aAJ}@@KBg@@u@GwBCOBo@\\c@QEGIAm@P_@R[BK`@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      32.532088,
+      -117.036734
+    ],
+    "end_latlng": [
+      32.531873,
+      -117.036744
+    ],
+    "average_speed": 2.812,
+    "max_speed": 5.283,
+    "average_cadence": 81.8,
+    "average_temp": 33,
+    "has_heartrate": true,
+    "average_heartrate": 137.9,
+    "max_heartrate": 156,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 124.8,
+    "elev_low": 22.2,
+    "upload_id": 16585251475,
+    "upload_id_str": "16585251475",
+    "external_id": "garmin_ping_471679278429",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 7
   }
 ]
