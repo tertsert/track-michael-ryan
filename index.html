@@ -145,7 +145,7 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/@mapbox/polyline"></script>
   <script>
-    const TRIP_START = new Date('2025-06-07T00:00:00Z');
+    const TRIP_START = new Date('2025-07-06T00:00:00Z');
 
     // === Main map === (trip rides only)
     const map = L.map('map').setView([39, -123], 5);
@@ -194,13 +194,13 @@
         return d.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
       } catch { return iso; }
     }
-    // Day number: days since TRIP_START (inclusive), based on UTC date
+    // Day number: days since TRIP_START (inclusive), based on UTC date — Day 1 = July 6
     function dayNumberFromTripStart(iso){
       const d = new Date(iso);
       const rideUTC = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
       const startUTC = Date.UTC(TRIP_START.getUTCFullYear(), TRIP_START.getUTCMonth(), TRIP_START.getUTCDate());
       const diffDays = Math.floor((rideUTC - startUTC) / 86400000);
-      return diffDays + 1; // Day 1 = Jul 7
+      return diffDays + 1; // Day 1 = Jul 6
     }
     function primaryPhotoUrl(activity){
       try {
@@ -303,10 +303,9 @@
             tap: false
           });
 
-          // Free, no‑token tiles (CARTO Positron)
-          L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            subdomains: 'abcd',
-            attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+          // Mini map styling
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
           }).addTo(mini);
 
           const coords = polyline.decode(a.map.summary_polyline);
