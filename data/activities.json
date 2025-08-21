@@ -27024,8 +27024,8 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 9,
-    "comment_count": 6,
+    "kudos_count": 11,
+    "comment_count": 7,
     "athlete_count": 1,
     "photo_count": 0,
     "map": {
@@ -27089,7 +27089,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 2,
+    "kudos_count": 6,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -27129,7 +27129,7 @@
     "external_id": "garmin_ping_471679278429",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 7
   }
