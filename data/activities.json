@@ -27206,14 +27206,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "hm",
     "distance": 1638.1,
     "moving_time": 601,
     "elapsed_time": 708,
     "total_elevation_gain": 5,
     "type": "Run",
     "sport_type": "Run",
-    "workout_type": null,
+    "workout_type": 0,
     "id": 15553233605,
     "start_date": "2025-08-22T22:44:23Z",
     "start_date_local": "2025-08-22T15:44:23Z",
@@ -27235,8 +27235,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -27263,7 +27263,7 @@
     "external_id": "garmin_ping_472404415123",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 4
   }
