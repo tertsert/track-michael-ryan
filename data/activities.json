@@ -27400,5 +27400,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 2
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "fps with ds",
+    "distance": 2417.9,
+    "moving_time": 684,
+    "elapsed_time": 716,
+    "total_elevation_gain": 4,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 15592980620,
+    "start_date": "2025-08-26T01:26:22Z",
+    "start_date_local": "2025-08-25T20:26:22Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15592980620",
+      "summary_polyline": "u_rqFx}bbP@wAAuAEq@?sEEkAD{@Ia@EIM?kB`Aa@PI?QUm@oA{@uCi@wAcBiCSc@Qk@Ig@EiAB}@Da@V_A^{@\\a@v@g@LONg@Ak@Me@]m@eBiBKc@Le@b@qANOJCRCr@C`@?Zc@UHIJE@kBTWRU`@Yx@CPJd@Zh@n@p@b@p@PXNh@?RIn@sAfA]b@Wp@IVOlAAdAFv@^`BXf@x@fA~@hBd@jAVjARf@^t@^d@`@I~@g@B?RJf@n@Hh@Bt@C`EHrBHJRFh@Eh@DFb@Kj@IL",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      39.746672,
+      -89.640766
+    ],
+    "end_latlng": [
+      39.74616,
+      -89.640763
+    ],
+    "average_speed": 3.535,
+    "max_speed": 4.683,
+    "average_cadence": 84.2,
+    "average_temp": 26,
+    "has_heartrate": true,
+    "average_heartrate": 140.1,
+    "max_heartrate": 153,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 196.6,
+    "elev_low": 191,
+    "upload_id": 16654098122,
+    "upload_id_str": "16654098122",
+    "external_id": "garmin_ping_473600630497",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 4
   }
 ]
