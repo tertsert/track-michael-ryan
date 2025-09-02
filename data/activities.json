@@ -27863,5 +27863,72 @@
     "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 3
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "all fun and games",
+    "distance": 4612.7,
+    "moving_time": 1350,
+    "elapsed_time": 1473,
+    "total_elevation_gain": 30,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 15666464477,
+    "start_date": "2025-09-02T02:28:23Z",
+    "start_date_local": "2025-09-01T21:28:23Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15666464477",
+      "summary_polyline": "gmlxFdfemQ?Bg@VkBXy@Ca@EKAYOYQ[]Ye@QSk@c@[Im@Cg@ROLaAlAiAlA]d@G@m@w@a@]_@U_Aq@i@]_FiCe@[e@SeA_Ay@{@wCyC{AiB{@kAiAcCs@uBm@eCYqASkCGoB@sDAyM?aLBkGAgB@_C@[BCn@A^F~DHjBBvHElA@dCFfA?l@UJAbCJvDCbDHhDCz@B@BElD@zBp@pETlAD`AEh@gAxE[`A]xA{@nEk@zAi@v@GRWdAQd@Jd@Fj@ChNMbOi@rGJRr@j@dAvALJd@XVJv@Jt@GnCo@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.865008,
+      -96.697461
+    ],
+    "end_latlng": [
+      40.864911,
+      -96.697667
+    ],
+    "average_speed": 3.417,
+    "max_speed": 5.08,
+    "average_cadence": 86.6,
+    "average_temp": 25,
+    "has_heartrate": true,
+    "average_heartrate": 150.3,
+    "max_heartrate": 168,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 381.2,
+    "elev_low": 352.4,
+    "upload_id": 16733830668,
+    "upload_id_str": "16733830668",
+    "external_id": "garmin_ping_475847558474",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 20
   }
 ]
