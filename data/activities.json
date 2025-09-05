@@ -28059,5 +28059,67 @@
     "pr_count": 0,
     "total_photo_count": 1,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "should i 26.2 in an ewok costume?",
+    "distance": 1924,
+    "moving_time": 493,
+    "elapsed_time": 518,
+    "total_elevation_gain": 16.3,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15700738771,
+    "start_date": "2025-09-05T00:22:03Z",
+    "start_date_local": "2025-09-04T19:22:03Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 3,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15700738771",
+      "summary_polyline": "sllxFnfemQz@SJ@FAVD^ADDAbA?E?LBFE|BSnA@\\ELAVJ^LNTJT@VC^O`@[z@eABG^]HFPZ\\RXLFF?JEP@PItABd@C`BC`@ELAXCFEBO?GCMBYCUBMCGBGA_A@QB_@GMBOCYB{@Ay@BW?ME[Am@BGA_@AQBeA?]Ci@@OAW@OEg@@OCG@]AGB{@CO@e@AS@c@AKIAIBQ?uB@]A}BGe@?MQcAEIAIIYEG?KUg@IIAMFMRK^i@n@o@x@aARM`@MX?h@LHHVNP^@HNTLJf@\\T?JFRDFDb@Br@Cx@QtAa@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864908,
+      -96.697518
+    ],
+    "end_latlng": [
+      40.864941,
+      -96.697609
+    ],
+    "average_speed": 3.903,
+    "max_speed": 5.8,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 382.1,
+    "elev_low": 368.2,
+    "upload_id": 16771440036,
+    "upload_id_str": "16771440036",
+    "external_id": "D73DFB25-0A97-42CB-B463-B1A3483FCB38-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 2,
+    "has_kudoed": false
   }
 ]
