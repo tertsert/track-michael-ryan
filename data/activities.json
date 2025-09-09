@@ -28384,14 +28384,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Night Run",
+    "name": "hastening in hastings",
     "distance": 1731.6,
     "moving_time": 617,
     "elapsed_time": 624,
     "total_elevation_gain": 9,
     "type": "Run",
     "sport_type": "Run",
-    "workout_type": null,
+    "workout_type": 0,
     "id": 15747263711,
     "start_date": "2025-09-09T03:12:44Z",
     "start_date_local": "2025-09-08T22:12:44Z",
@@ -28413,8 +28413,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -28441,7 +28441,7 @@
     "external_id": "garmin_ping_478287571744",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 2
   }
