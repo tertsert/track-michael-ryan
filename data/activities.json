@@ -28451,7 +28451,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Night Run",
+    "name": "lawd have mercy",
     "distance": 1617.8,
     "moving_time": 655,
     "elapsed_time": 661,
@@ -28480,8 +28480,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -28508,7 +28508,7 @@
     "external_id": "garmin_ping_478645823724",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 2
   }
