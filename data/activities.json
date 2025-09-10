@@ -28444,5 +28444,72 @@
     "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 2
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Night Run",
+    "distance": 1617.8,
+    "moving_time": 655,
+    "elapsed_time": 661,
+    "total_elevation_gain": 10,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15759635642,
+    "start_date": "2025-09-10T03:36:13Z",
+    "start_date_local": "2025-09-09T22:36:13Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15759635642",
+      "summary_polyline": "khzvFr{nwQCiC@]@Aj@CVMHo@CiC@SBAJDJH@^@]DK@?HDHJ`@Dr@?~@NbAVb@Fr@N^XTl@?\\Q\\IBQ@OGKKg@k@[O]De@?uAO[[Gm@?[PW\\?nCp@d@Fh@NJBZVRj@Ab@Q\\YDSMi@m@_@Us@FgAIc@I[a@Es@Ie@WOSBAhBCl@Kz@Cr@@dBI\\En@GZcAJc@Ha@XAAO[FWz@s@Xa@?Q?VBB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.608228,
+      -98.385378
+    ],
+    "end_latlng": [
+      40.608195,
+      -98.385365
+    ],
+    "average_speed": 2.47,
+    "max_speed": 3.214,
+    "average_cadence": 86.5,
+    "average_temp": 28,
+    "has_heartrate": true,
+    "average_heartrate": 122.1,
+    "max_heartrate": 134,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 587,
+    "elev_low": 578.6,
+    "upload_id": 16833826513,
+    "upload_id_str": "16833826513",
+    "external_id": "garmin_ping_478645823724",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 2
   }
 ]
