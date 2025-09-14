@@ -28719,14 +28719,14 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Night Run",
+    "name": "scratching bug bites be like",
     "distance": 1618.1,
     "moving_time": 620,
     "elapsed_time": 630,
     "total_elevation_gain": 5,
     "type": "Run",
     "sport_type": "Run",
-    "workout_type": null,
+    "workout_type": 0,
     "id": 15803930512,
     "start_date": "2025-09-14T04:32:30Z",
     "start_date_local": "2025-09-13T23:32:30Z",
@@ -28748,8 +28748,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -28776,7 +28776,7 @@
     "external_id": "garmin_ping_480057229919",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 2
   }
