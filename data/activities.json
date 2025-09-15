@@ -28779,5 +28779,72 @@
     "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 2
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "🧚‍♀️✨and he was a fairy✨🧚‍♂️",
+    "distance": 3856.2,
+    "moving_time": 1102,
+    "elapsed_time": 1140,
+    "total_elevation_gain": 23,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 15815038489,
+    "start_date": "2025-09-15T00:15:54Z",
+    "start_date_local": "2025-09-14T19:15:54Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 4,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15815038489",
+      "summary_polyline": "_mlxFrfemQ?@E@m@@gBXQ@i@Eu@S[Me@g@Ye@c@e@SOOGm@Ie@Fi@^_BjBeAhAEJFTXf@Rj@d@rBHdBBpA@vBBr@EJq@AWDi@?k@CsBBQCiBNi@?wCAaAMoGBuECwC@kA?q@IiAJsACqHBsBAk@E[Be@?QDDjAD@xCGhBBf@Ct@BjCBrBFbDIf@?p@B|BEbBBzAAdGH~BOfA?d@Cv@?~AHnDJp@?n@@VINa@O_BC{DE_BS_BMo@a@eACQDMtCyC`@[`@Ib@@f@RnAbB`@Tr@N`@Dn@@v@Mz@Wn@M",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864963,
+      -96.697535
+    ],
+    "end_latlng": [
+      40.864882,
+      -96.697626
+    ],
+    "average_speed": 3.499,
+    "max_speed": 4.589,
+    "average_cadence": 85.7,
+    "average_temp": 28,
+    "has_heartrate": true,
+    "average_heartrate": 150.4,
+    "max_heartrate": 181,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 381.2,
+    "elev_low": 348.8,
+    "upload_id": 16892283831,
+    "upload_id_str": "16892283831",
+    "external_id": "garmin_ping_480379997242",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 17
   }
 ]
