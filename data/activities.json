@@ -29114,5 +29114,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 5
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Evening Run",
+    "distance": 1919.3,
+    "moving_time": 475,
+    "elapsed_time": 482,
+    "total_elevation_gain": 22,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15869856185,
+    "start_date": "2025-09-19T23:03:03Z",
+    "start_date_local": "2025-09-19T18:03:03Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15869856185",
+      "summary_polyline": "sllxFpgemQ_AAoCR_@Kk@Uk@i@{@gA{@g@c@CU@o@ZOTGZILqBdCOXJb@\\bAPz@Jt@Dv@F~F?HPb@d@B|A?bEPrA?rAE`BBf@Ar@D~AIzFCRC@EJgAAgDBs@HaAASGMy@{@MGI@o@j@w@|@_@Za@R[Fg@UU]?GB[T}@Hm@FcDGa@ECe@M]AgAL",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864903,
+      -96.697684
+    ],
+    "end_latlng": [
+      40.86488,
+      -96.697483
+    ],
+    "average_speed": 4.041,
+    "max_speed": 4.98,
+    "average_cadence": 87.4,
+    "average_temp": 25,
+    "has_heartrate": true,
+    "average_heartrate": 129.2,
+    "max_heartrate": 144,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 388.8,
+    "elev_low": 372,
+    "upload_id": 16948639802,
+    "upload_id_str": "16948639802",
+    "external_id": "garmin_ping_482114816577",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 1
   }
 ]
