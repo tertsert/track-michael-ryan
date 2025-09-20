@@ -29121,7 +29121,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Evening Run",
+    "name": "i swear i got higher than that",
     "distance": 1919.3,
     "moving_time": 475,
     "elapsed_time": 482,
@@ -29150,8 +29150,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -29178,7 +29178,7 @@
     "external_id": "garmin_ping_482114816577",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 1
   }
