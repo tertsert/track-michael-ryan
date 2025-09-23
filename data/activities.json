@@ -29315,5 +29315,72 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 6
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "bad day to be a tall metal object",
+    "distance": 1708.4,
+    "moving_time": 550,
+    "elapsed_time": 623,
+    "total_elevation_gain": 8,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "id": 15904835216,
+    "start_date": "2025-09-23T01:40:58Z",
+    "start_date_local": "2025-09-22T20:40:58Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 2,
+    "comment_count": 1,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15904835216",
+      "summary_polyline": "imlxFlfemQE\\c@Fw@F_@F_AAa@Ii@Wa@Y}@sAi@[SQXsCNuBBeABmDFa@NOZCd@Nf@DtDD?Ab@AlBF~AALM@MByCC_BGzE@bBMfSI`EYnBEr@Ja@ToBDkA@iCOQ[Eg@?_AJ",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.865012,
+      -96.697505
+    ],
+    "end_latlng": [
+      40.864896,
+      -96.697527
+    ],
+    "average_speed": 3.106,
+    "max_speed": 4.15,
+    "average_cadence": 86.9,
+    "average_temp": 32,
+    "has_heartrate": true,
+    "average_heartrate": 145.2,
+    "max_heartrate": 159,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 382,
+    "elev_low": 367,
+    "upload_id": 16984600456,
+    "upload_id_str": "16984600456",
+    "external_id": "garmin_ping_483208382208",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 6
   }
 ]
