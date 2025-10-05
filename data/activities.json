@@ -30114,5 +30114,67 @@
     "pr_count": 0,
     "total_photo_count": 0,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Night Run",
+    "distance": 1935.4,
+    "moving_time": 751,
+    "elapsed_time": 751,
+    "total_elevation_gain": 22.2,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 16036581056,
+    "start_date": "2025-10-05T03:01:19Z",
+    "start_date_local": "2025-10-04T22:01:19Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16036581056",
+      "summary_polyline": "{llxFrfemQO@OHM@IBQB[JO@SH]@e@C[CYKe@W[]a@q@i@g@QEOAMGY?a@D]Nk@f@mAvAc@b@YZCFBJTTb@hAJ\\RtAJtB?bEBVDHLDRAbAFfA?D@VANBHAFDhAAH@XAj@BLCFBR?TBhCED@dB@tECNBx@AJBJAZ@FCBI@c@Ck@DQCOFWES?W@[FQ@SBGKU@ODK@q@ICG@YOe@c@C?MX_@L_@d@GDE?KNo@^KDKCEE_@Gc@_@IACECGBKHI?MDITgB?{BDk@AKGGWBYGk@@IIMJMB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864945,
+      -96.697532
+    ],
+    "end_latlng": [
+      40.864895,
+      -96.697542
+    ],
+    "average_speed": 2.577,
+    "max_speed": 3.6,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 382.1,
+    "elev_low": 368.1,
+    "upload_id": 17118817385,
+    "upload_id_str": "17118817385",
+    "external_id": "FB55F962-C82C-415A-A64F-437BECE75DBE-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false
   }
 ]
