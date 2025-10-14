@@ -30764,7 +30764,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Evening Run",
+    "name": "pheonix post putt pace",
     "distance": 1648.7,
     "moving_time": 696,
     "elapsed_time": 934,
@@ -30793,8 +30793,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -30817,7 +30817,7 @@
     "external_id": "7E6CB6B0-F066-444F-A464-54D3C7585E1C-activity.fit",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false
   }
 ]
