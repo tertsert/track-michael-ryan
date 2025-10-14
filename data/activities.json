@@ -30654,7 +30654,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 1,
-    "kudos_count": 16,
+    "kudos_count": 17,
     "comment_count": 1,
     "athlete_count": 1,
     "photo_count": 0,
@@ -30756,6 +30756,68 @@
     "from_accepted_tag": false,
     "pr_count": 0,
     "total_photo_count": 1,
+    "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Evening Run",
+    "distance": 1648.7,
+    "moving_time": 696,
+    "elapsed_time": 934,
+    "total_elevation_gain": 3.4,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 16133358413,
+    "start_date": "2025-10-14T02:13:31Z",
+    "start_date_local": "2025-10-13T19:13:31Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16133358413",
+      "summary_polyline": "easjEbaphT_@zAMt@Gl@If@?TERMjBCHIDM@u@MMBOEuBMa@?KCQ?a@E{@CQj@BJARFl@IfBH\\?\\C^Gh@@j@CRB^?dADRAR@HCR@RCHC`A@RAz@@^ADDnBCn@@hABDNBDFD@DFH`@P\\BVIOC]Oa@[WCKKEDYAsAB]A?@GC]@eBCIBq@AYDQC]BQ?g@Au@E_@B[CQDaACKFa@@_@?c@CGEo@F[@UA_@Gw@@U@INGZBRADBNAN@JAHBNAzAL",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      33.362277,
+      -111.66242
+    ],
+    "end_latlng": [
+      33.363546,
+      -111.664394
+    ],
+    "average_speed": 2.369,
+    "max_speed": 3.22,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 419.6,
+    "elev_low": 415,
+    "upload_id": 17216699853,
+    "upload_id_str": "17216699853",
+    "external_id": "7E6CB6B0-F066-444F-A464-54D3C7585E1C-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
     "has_kudoed": false
   }
 ]
