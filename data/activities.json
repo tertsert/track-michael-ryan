@@ -30819,5 +30819,72 @@
     "pr_count": 0,
     "total_photo_count": 2,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "big ole selfie stick",
+    "distance": 1654.7,
+    "moving_time": 574,
+    "elapsed_time": 750,
+    "total_elevation_gain": 4,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 16144771228,
+    "start_date": "2025-10-15T03:00:33Z",
+    "start_date_local": "2025-10-14T20:00:33Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 2,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16144771228",
+      "summary_polyline": "easjEt`phTdAoFPqA@a@A[KWc@I_@@u@H]?g@Fs@BgAJg@IeCGy@?CHIj@H`A?l@GpAHl@KjBDn@?`@GlADjAEh@?n@F\\Z\\^FfA@zD\\f@@\\DTUH}AN}A^{Bp@_F`@aCJ_@[hAQ|@E`@a@bBk@fDBHLy@^uA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      33.36227,
+      -111.662341
+    ],
+    "end_latlng": [
+      33.362244,
+      -111.662447
+    ],
+    "average_speed": 2.883,
+    "max_speed": 3.9,
+    "average_cadence": 85.3,
+    "average_temp": 29,
+    "has_heartrate": true,
+    "average_heartrate": 136.6,
+    "max_heartrate": 149,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 504.8,
+    "elev_low": 493.6,
+    "upload_id": 17228204908,
+    "upload_id_str": "17228204908",
+    "external_id": "garmin_ping_491025415874",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 2
   }
 ]
