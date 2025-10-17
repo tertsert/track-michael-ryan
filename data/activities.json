@@ -30979,7 +30979,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a16165200916",
@@ -31018,5 +31018,72 @@
     "pr_count": 0,
     "total_photo_count": 0,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Evening Run",
+    "distance": 1899.9,
+    "moving_time": 615,
+    "elapsed_time": 624,
+    "total_elevation_gain": 22,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 16165656138,
+    "start_date": "2025-10-17T00:49:44Z",
+    "start_date_local": "2025-10-16T19:49:44Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16165656138",
+      "summary_polyline": "wllxF`femQa@N_BZ_@D{@Ek@SQKi@i@m@_Ac@]UEk@`@g@FSLoAlA}AnBATRb@\\|@Nl@Lv@DnAArAB`DFNZJnABrEG~FJd@Ad@@~AGj@@tACxC@RGB]B}BJiA?OGs@F{@IIc@Ss@y@KBCBmAbBm@^UJI@WCKE_@WM]Pi@TsBFoDAMIEcADQ@o@J",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864925,
+      -96.69745
+    ],
+    "end_latlng": [
+      40.86488,
+      -96.69742
+    ],
+    "average_speed": 3.089,
+    "max_speed": 5.1,
+    "average_cadence": 86.6,
+    "average_temp": 27,
+    "has_heartrate": true,
+    "average_heartrate": 138.7,
+    "max_heartrate": 159,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 389.6,
+    "elev_low": 374.6,
+    "upload_id": 17249267102,
+    "upload_id_str": "17249267102",
+    "external_id": "garmin_ping_491709401210",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 5
   }
 ]
