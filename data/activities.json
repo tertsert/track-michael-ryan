@@ -31147,5 +31147,67 @@
     "pr_count": 0,
     "total_photo_count": 2,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "bad day to be a lands",
+    "distance": 1658.7,
+    "moving_time": 551,
+    "elapsed_time": 593,
+    "total_elevation_gain": 8.7,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 16182549860,
+    "start_date": "2025-10-18T16:14:50Z",
+    "start_date_local": "2025-10-18T10:14:50Z",
+    "timezone": "(GMT-07:00) America/Denver",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16182549860",
+      "summary_polyline": "etbjGznbmRc@y@ASOi@Aa@JWBO^SHK@MIMCs@D`ABPNEJi@HC@IFADD?GI@KL@HKTBBJ@DJJ?HF^KFG?IOKEGFSB]DKCG@OHKJGDABFP]DCDWFCHHDE@MCIFG@IJKAYIS?i@CGA[CGG[BET?JA@MFID_@X[FJ?Wb@YJ[L{@JKLYVGFSD?AGDE@ABFJ@BEBYTa@HCCECRMd@I?CDCB?HGIK?GX]P[TGNGZ@RQf@WRIBIVK?EHCNIHGLGXOJCFFV?REDI@EDAR@HZJNh@AXNW?FCDIEKDDNABB@IF@JBHAJR?FED@A@LBBCGDCH?LGTGAACE_@S@CMGEMBEFGAMFY\\KTE@CFBH?PSPETGC?ZUBGCEMGDE?CPOEKTGDG@GDKXE`@F`@FLDZZt@RRHHP?l@LFFBLHFPIFBVBNCFBJ?",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      43.764039,
+      -101.926379
+    ],
+    "end_latlng": [
+      43.763072,
+      -101.926721
+    ],
+    "average_speed": 3.01,
+    "max_speed": 4.62,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 803.6,
+    "elev_low": 794.4,
+    "upload_id": 17266342055,
+    "upload_id_str": "17266342055",
+    "external_id": "D44AB839-97E6-4F8E-B895-2E02ADBEBC92-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
   }
 ]
