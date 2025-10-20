@@ -31216,7 +31216,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Night Run",
+    "name": "12 hours of driving later",
     "distance": 1750.6,
     "moving_time": 538,
     "elapsed_time": 550,
@@ -31233,7 +31233,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 2,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -31245,8 +31245,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
