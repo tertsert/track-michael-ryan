@@ -7901,7 +7901,7 @@
     "total_elevation_gain": 11.9,
     "type": "Run",
     "sport_type": "Run",
-    "workout_type": 0,
+    "workout_type": 1,
     "device_name": "Apple Watch Series 3",
     "id": 13002675511,
     "start_date": "2024-11-28T14:30:38Z",
@@ -7911,7 +7911,7 @@
     "location_city": null,
     "location_state": null,
     "location_country": null,
-    "achievement_count": 2,
+    "achievement_count": 3,
     "kudos_count": 14,
     "comment_count": 1,
     "athlete_count": 28,
@@ -7936,7 +7936,7 @@
       40.815938,
       -96.711691
     ],
-    "average_speed": 4.094,
+    "average_speed": 4.084,
     "max_speed": 5.66,
     "has_heartrate": true,
     "average_heartrate": 186.3,
@@ -7949,10 +7949,10 @@
     "upload_id_str": "13865643518",
     "external_id": "2D78BA7C-8EB8-4325-959F-25C6C08AA593.fit",
     "from_accepted_tag": false,
-    "pr_count": 2,
+    "pr_count": 3,
     "total_photo_count": 1,
     "has_kudoed": false,
-    "suffer_score": 89
+    "suffer_score": 78
   },
   {
     "resource_state": 2,
