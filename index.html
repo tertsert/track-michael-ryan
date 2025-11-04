@@ -146,6 +146,7 @@
   <script src="https://unpkg.com/@mapbox/polyline"></script>
   <script>
     const TRIP_START = new Date('2025-07-06T00:00:00Z');
+    const MAX_DAY = 46; // Stop displaying after Day 46
 
     // === Main map === (trip rides only)
     const map = L.map('map').setView([39, -123], 5);
@@ -161,7 +162,8 @@
       const rides = data.filter(a =>
         a?.type?.toLowerCase() === 'ride' &&
         new Date(a.start_date) >= TRIP_START &&
-        a?.map?.summary_polyline
+        a?.map?.summary_polyline &&
+        dayNumberFromTripStart(a.start_date) <= MAX_DAY
       );
 
       let bounds;
@@ -217,7 +219,7 @@
 
       data.forEach(a => {
         const d = new Date(a.start_date);
-        if (d >= TRIP_START && a.type?.toLowerCase() === 'ride') {
+        if (d >= TRIP_START && a.type?.toLowerCase() === 'ride' && dayNumberFromTripStart(a.start_date) <= MAX_DAY) {
           totalDistanceM += a.distance || 0;
           totalTimeS += a.moving_time || 0;
           totalElevM += a.total_elevation_gain || 0;
@@ -241,7 +243,8 @@
       const rides = data
         .filter(a =>
           a?.type?.toLowerCase() === 'ride' &&
-          new Date(a.start_date) >= TRIP_START
+          new Date(a.start_date) >= TRIP_START &&
+          dayNumberFromTripStart(a.start_date) <= MAX_DAY
         )
         // newest first for display
         .sort((a,b) => new Date(b.start_date) - new Date(a.start_date))
