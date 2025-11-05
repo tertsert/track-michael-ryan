@@ -32865,7 +32865,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "shoutout duncan aviation",
     "distance": 4734.3,
     "moving_time": 1454,
     "elapsed_time": 1493,
@@ -32895,8 +32895,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -32923,7 +32923,7 @@
     "external_id": "garmin_ping_498478232254",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 25
   }
