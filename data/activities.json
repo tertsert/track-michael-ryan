@@ -32933,7 +32933,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Evening Run",
+    "name": "bow wow wow🐺",
     "distance": 1776.5,
     "moving_time": 462,
     "elapsed_time": 474,
@@ -32951,7 +32951,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 4,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -32963,8 +32963,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -32991,7 +32991,7 @@
     "external_id": "garmin_ping_498868845012",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 6
   }
