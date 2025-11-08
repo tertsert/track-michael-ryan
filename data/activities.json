@@ -33062,5 +33062,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 14
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Evening Run",
+    "distance": 1761,
+    "moving_time": 601,
+    "elapsed_time": 613,
+    "total_elevation_gain": 20,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16398881025,
+    "start_date": "2025-11-08T02:56:52Z",
+    "start_date_local": "2025-11-07T20:56:52Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16398881025",
+      "summary_polyline": "yllxFffemQ_@JgAPe@Rw@Am@Ea@Qo@e@a@o@]e@_@U[GEGAGRw@Bs@ReCJiBAy@@CDqBEa@FkECoFDoACc@FuCKi@IM?K@WNIH@^L?^Kd@AjACb@@h@UHINALAl@Dd@@p@Db@Cl@B`AENIEBDBZ?p@Cl@E|CEj@Dd@Eh@?lBKrB[rDFD^JPJdA~A|@h@ZJd@@j@AhB]XBVA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864937,
+      -96.697477
+    ],
+    "end_latlng": [
+      40.864919,
+      -96.697607
+    ],
+    "average_speed": 2.93,
+    "max_speed": 3.833,
+    "average_cadence": 87.7,
+    "average_temp": 23,
+    "has_heartrate": true,
+    "average_heartrate": 137.5,
+    "max_heartrate": 157,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 391.6,
+    "elev_low": 378.6,
+    "upload_id": 17484824224,
+    "upload_id_str": "17484824224",
+    "external_id": "garmin_ping_499923887033",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 3
   }
 ]
