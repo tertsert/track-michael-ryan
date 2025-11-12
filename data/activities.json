@@ -33212,7 +33212,7 @@
     "total_elevation_gain": 158,
     "type": "Run",
     "sport_type": "Run",
-    "workout_type": null,
+    "workout_type": 1,
     "device_name": "Garmin Instinct Solar",
     "id": 16407473949,
     "start_date": "2025-11-09T14:40:55Z",
@@ -33359,7 +33359,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 15,
+    "kudos_count": 16,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -33409,7 +33409,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "@cade suing ur a machine",
     "distance": 5018.7,
     "moving_time": 1240,
     "elapsed_time": 1270,
@@ -33439,8 +33439,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -33467,7 +33467,7 @@
     "external_id": "garmin_ping_501383262515",
     "from_accepted_tag": false,
     "pr_count": 2,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 28
   }
