@@ -33631,7 +33631,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 2,
+    "kudos_count": 3,
     "comment_count": 1,
     "athlete_count": 2,
     "photo_count": 0,
@@ -33737,6 +33737,69 @@
     "from_accepted_tag": false,
     "pr_count": 0,
     "total_photo_count": 0,
+    "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "it’s giving canvas panda",
+    "distance": 1921.1,
+    "moving_time": 602,
+    "elapsed_time": 614,
+    "total_elevation_gain": 20.7,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 16471269177,
+    "start_date": "2025-11-16T04:00:04Z",
+    "start_date_local": "2025-11-15T22:00:04Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16471269177",
+      "summary_polyline": "{llxFlgemQu@?CGW@EB}@LcACc@Io@[][e@w@a@a@OGKCE@YIW@g@L[RQPIPA^GVYVi@v@]XMPAFBHHLFRP`@XjA@NNfB?|@AN@fDDPDFNHNCd@@lAAxCHDAP@l@C`@Fd@?PCt@?rAFLAV@^CNBl@C`A@h@AH@d@CPBd@C`A@JAHBPEBE@cCHKBa@?mADk@Em@BGCEOAKEYSk@u@E@KVIFCLMBg@r@SNWH_@RK@OASIUWJQLa@PoADsA?{@ASKa@ISGCi@Am@@e@JGCE@GO",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864942,
+      -96.697667
+    ],
+    "end_latlng": [
+      40.864952,
+      -96.697476
+    ],
+    "average_speed": 3.191,
+    "max_speed": 4.65,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 382.4,
+    "elev_low": 368.1,
+    "upload_id": 17557787295,
+    "upload_id_str": "17557787295",
+    "external_id": "97ED699E-F217-42C2-ADA6-9A497B24A6D1-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
     "has_kudoed": false
   }
 ]
