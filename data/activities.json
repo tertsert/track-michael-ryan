@@ -34000,5 +34000,73 @@
     "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 31
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "my dynamic stretching routine",
+    "distance": 1699.6,
+    "moving_time": 589,
+    "elapsed_time": 596,
+    "total_elevation_gain": 12,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16511161302,
+    "start_date": "2025-11-20T03:22:54Z",
+    "start_date_local": "2025-11-19T21:22:54Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16511161302",
+      "summary_polyline": "}llxF`gemQ_@MI?yBZS?o@Eo@Y_@Y_@a@[i@a@[o@U[Cq@Na@\\yAtBeAjAKEyAcBe@_@iAo@u@]kAg@m@]kAm@m@_@yAqAKIABv@x@bAz@hFxCdDbB\\Vt@`AH?BCxBeC~@}@HGd@M^?j@RRNnA`Bn@^d@J`ADvAUdAW",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864955,
+      -96.697606
+    ],
+    "end_latlng": [
+      40.864955,
+      -96.697568
+    ],
+    "average_speed": 2.886,
+    "max_speed": 3.629,
+    "average_cadence": 89.2,
+    "average_temp": 27,
+    "has_heartrate": true,
+    "average_heartrate": 132.9,
+    "max_heartrate": 145,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 385.4,
+    "elev_low": 372.6,
+    "upload_id": 17597989284,
+    "upload_id_str": "17597989284",
+    "external_id": "garmin_ping_503974066466",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 2
   }
 ]
