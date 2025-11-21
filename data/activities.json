@@ -34068,5 +34068,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 2
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "jeepers, night fog",
+    "distance": 3297,
+    "moving_time": 994,
+    "elapsed_time": 1010,
+    "total_elevation_gain": 23,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16519896228,
+    "start_date": "2025-11-20T23:52:54Z",
+    "start_date_local": "2025-11-20T17:52:54Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 4,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16519896228",
+      "summary_polyline": "cmlxFfhemQaAH}AVW?{@Ic@QSSa@c@o@}@]YUENQ@]Ms@N{AL}CF{GAkDHiH@kEEMMW?GBSVo@V{@r@aAVq@zCyMN}@VcCAy@Im@Sw@SwAGk@Km@IiA@cCBa@A}B@EFCT@BDAhA@bAKv@JtDJb@B^ZdBXz@@RAb@Dh@s@|C[`BWz@Ij@?Vc@pBQn@O~@[n@s@jAU`A@r@WbAAl@Iv@Ev@Ad@Dx@IbABj@Ap@E\\Ap@@n@CbDUlAEd@@t@APApCGtBIl@EtAHJn@XZ\\L^\\f@b@X^Lz@Fd@AnASHEfAWt@Kn@Eh@@OBu@C[?g@F",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g14495829",
+    "start_latlng": [
+      40.864986,
+      -96.697797
+    ],
+    "end_latlng": [
+      40.864852,
+      -96.697454
+    ],
+    "average_speed": 3.317,
+    "max_speed": 4.257,
+    "average_cadence": 86.7,
+    "average_temp": 25,
+    "has_heartrate": true,
+    "average_heartrate": 150.2,
+    "max_heartrate": 165,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 386.8,
+    "elev_low": 373.6,
+    "upload_id": 17606820204,
+    "upload_id_str": "17606820204",
+    "external_id": "garmin_ping_504287224573",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 2,
+    "has_kudoed": false,
+    "suffer_score": 17
   }
 ]
