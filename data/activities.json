@@ -34841,7 +34841,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 1,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -34891,7 +34891,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Morning Run",
+    "name": "23 miles for 23 years!",
     "distance": 37016.2,
     "moving_time": 12724,
     "elapsed_time": 13087,
@@ -34909,8 +34909,8 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
-    "comment_count": 0,
+    "kudos_count": 2,
+    "comment_count": 2,
     "athlete_count": 1,
     "photo_count": 0,
     "map": {
@@ -34921,8 +34921,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g14495829",
     "start_latlng": [
@@ -34949,7 +34949,7 @@
     "external_id": "garmin_ping_508481783899",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 4,
     "has_kudoed": false,
     "suffer_score": 274
   }
