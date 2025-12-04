@@ -35027,7 +35027,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "look how fast my new shoes are",
     "distance": 2056.4,
     "moving_time": 586,
     "elapsed_time": 626,
@@ -35057,10 +35057,10 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
-    "gear_id": "g14495829",
+    "gear_id": "g27536600",
     "start_latlng": [
       40.864939,
       -96.69769
@@ -35085,7 +35085,7 @@
     "external_id": "garmin_ping_509222266445",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 8
   }
