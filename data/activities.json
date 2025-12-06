@@ -35088,5 +35088,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 8
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "cracked screen protector with my 🦷",
+    "distance": 1897.1,
+    "moving_time": 592,
+    "elapsed_time": 598,
+    "total_elevation_gain": 10,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16661100967,
+    "start_date": "2025-12-05T23:49:16Z",
+    "start_date_local": "2025-12-05T17:49:16Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 2,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16661100967",
+      "summary_polyline": "_mlxFnfemQuATy@Rw@?e@E_@Qq@g@_AyAUOi@Sf@uEH_C@kFHyFBuDDuBAqDQa@?MBOLIN@VJ?\\Sb@Q~FCrGAl@Kh@FZ?jAFLZBtAAt@BvBAV@RAxBHnACJB?nBCt@CVAdCEnBAlDElAS@_AAq@H",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.864961,
+      -96.697516
+    ],
+    "end_latlng": [
+      40.864917,
+      -96.697521
+    ],
+    "average_speed": 3.205,
+    "max_speed": 4,
+    "average_cadence": 85,
+    "average_temp": 27,
+    "has_heartrate": true,
+    "average_heartrate": 146.2,
+    "max_heartrate": 160,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 385.4,
+    "elev_low": 374.6,
+    "upload_id": 17750261597,
+    "upload_id_str": "17750261597",
+    "external_id": "garmin_ping_509565540142",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 8
   }
 ]
