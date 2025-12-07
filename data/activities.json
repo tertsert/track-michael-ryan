@@ -35156,5 +35156,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 8
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Night Run",
+    "distance": 1723.9,
+    "moving_time": 613,
+    "elapsed_time": 648,
+    "total_elevation_gain": 12,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16671808100,
+    "start_date": "2025-12-07T05:32:37Z",
+    "start_date_local": "2025-12-06T23:32:37Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16671808100",
+      "summary_polyline": "yllxFjfemQ?@wCl@q@AWGS?s@_@e@a@e@u@SUa@UUEIKTgBTsEB{DJiHDgIHkDCSGIEW@QJMD?`@JBD@TCLg@~@AZAl@Ch@?nBG~@AnBEhA@?Bj@ItD?dBGfEGx@IhBM|A@X\\HRJJJ`AtAXXh@Th@FJBd@@d@EtBa@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.864936,
+      -96.697491
+    ],
+    "end_latlng": [
+      40.864976,
+      -96.697587
+    ],
+    "average_speed": 2.812,
+    "max_speed": 3.529,
+    "average_cadence": 91,
+    "average_temp": 25,
+    "has_heartrate": true,
+    "average_heartrate": 128.7,
+    "max_heartrate": 142,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 385.4,
+    "elev_low": 368.8,
+    "upload_id": 17761158395,
+    "upload_id_str": "17761158395",
+    "external_id": "garmin_ping_509972082335",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 2
   }
 ]
