@@ -35428,5 +35428,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 32
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "thought for sure it was gator poop",
+    "distance": 3920,
+    "moving_time": 1398,
+    "elapsed_time": 2072,
+    "total_elevation_gain": 24,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16708686069,
+    "start_date": "2025-12-10T23:32:04Z",
+    "start_date_local": "2025-12-10T17:32:04Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16708686069",
+      "summary_polyline": "{nleErusqPv@_@BECeBJmAV{Al@{AbAu@tA}AbDsC~@eA\\g@Ti@XcAL_AFo@@sAQ{FGcAK}@WsAy@mCg@oA}AqCi@u@q@u@@iAMy@Je@M{@?a@FgAEm@YKCGEmA@YU{@IM_@UUYYgA}@q@UOMCMKAGNa@G{@ES?i@CGq@u@CKO[a@KI?IAECAK`@{Bd@{BNgAHyAFa@`@IVCx@Bf@Al@I\\?XC?Gd@A^FLj@V^FXJJiDhENd@LTBJRLVXVNXC^Bf@HNJj@n@XJJ@b@Qb@AVNFNBZ?vAM\\a@BOFS|AAXO\\Kv@aB?}@J_@\\IRONUh@O^Cz@DPZXB?@HBnCH~@ETFv@ClATZ\\R\\f@hB`Dp@bBTr@`@rBV`CPhF@dAEbBM`AYfASh@{@pAg@h@yCjCSTo@f@g@j@c@Zm@~@Wp@Ol@O`AGfA?nAg@X",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      32.50942,
+      -92.184099
+    ],
+    "end_latlng": [
+      32.509422,
+      -92.183905
+    ],
+    "average_speed": 2.804,
+    "max_speed": 4.675,
+    "average_cadence": 85.7,
+    "average_temp": 25,
+    "has_heartrate": true,
+    "average_heartrate": 142.8,
+    "max_heartrate": 164,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 0.6,
+    "elev_low": -19.8,
+    "upload_id": 17798545261,
+    "upload_id_str": "17798545261",
+    "external_id": "garmin_ping_511306972700",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 4,
+    "has_kudoed": false,
+    "suffer_score": 14
   }
 ]
