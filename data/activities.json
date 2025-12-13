@@ -35564,5 +35564,68 @@
     "total_photo_count": 4,
     "has_kudoed": false,
     "suffer_score": 4
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "i got my wings back",
+    "distance": 1798.5,
+    "moving_time": 444,
+    "elapsed_time": 447,
+    "total_elevation_gain": 12.5,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 16727370887,
+    "start_date": "2025-12-13T05:08:31Z",
+    "start_date_local": "2025-12-12T23:08:31Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16727370887",
+      "summary_polyline": "amlxFdgemQSMHGmCf@g@?k@GcAi@KOGAKMWi@UW_@[e@Ee@DKF[H_@VEHWX]Xi@t@}@z@GCKYUQGMk@g@E?_Ai@UQSGIISGeAm@GAs@c@WKEGi@YMCEEEAc@YKE[S_BcBMGJRVPj@n@h@d@pBhAPFr@b@LBdAn@jDhBj@f@h@t@F@HGJYz@w@b@k@`@YLYPONGh@Kb@?JFL@VJPLh@~@d@d@`@Tb@Lz@DVAv@Qx@MFEb@KG?CA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.864977,
+      -96.697627
+    ],
+    "end_latlng": [
+      40.864947,
+      -96.697473
+    ],
+    "average_speed": 4.051,
+    "max_speed": 5.64,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 378.2,
+    "elev_low": 364.8,
+    "upload_id": 17817472854,
+    "upload_id_str": "17817472854",
+    "external_id": "5B7DAC29-E036-4EAE-80C2-CF05F88BEE3D-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
   }
 ]
