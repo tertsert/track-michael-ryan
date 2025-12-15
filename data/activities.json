@@ -35690,5 +35690,73 @@
     "pr_count": 0,
     "total_photo_count": 1,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "this route is called godzilla’s hangnail",
+    "distance": 3139.5,
+    "moving_time": 921,
+    "elapsed_time": 929,
+    "total_elevation_gain": 57,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16745614212,
+    "start_date": "2025-12-15T03:05:33Z",
+    "start_date_local": "2025-12-14T20:05:33Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 3,
+    "kudos_count": 2,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16745614212",
+      "summary_polyline": "sralErt}hTY?GDGJYfAI|AP`AAJEDeAP_FZi@J_@@MGAMBa@Ry@Xa@Vu@b@q@r@cBVg@Je@@q@E]IOUOS@MBmAh@c@T[JmChAkAb@_ClA{@h@UHMC[c@KK[U_@Oc@EmAJi@BOGAE?SBc@HSJq@L]TDf@Pb@HdCV`AIzAQj@SrBy@zAw@rHaDnEqBvAe@pAq@t@WxAo@^CJVBb@Cp@a@bCYpCKtAQ`BOb@cAtASn@GfF@dAGzAW~@a@j@i@Xi@HSCEIe@mH[eBBuADWVy@NWLG",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      33.60059,
+      -111.732095
+    ],
+    "end_latlng": [
+      33.600602,
+      -111.731974
+    ],
+    "average_speed": 3.409,
+    "max_speed": 4.567,
+    "average_cadence": 82.3,
+    "average_temp": 28,
+    "has_heartrate": true,
+    "average_heartrate": 159.2,
+    "max_heartrate": 175,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 534.6,
+    "elev_low": 501,
+    "upload_id": 17835998189,
+    "upload_id_str": "17835998189",
+    "external_id": "garmin_ping_512718943857",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 24
   }
 ]
