@@ -35758,5 +35758,73 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 24
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "sunrise peak",
+    "distance": 6136.3,
+    "moving_time": 3007,
+    "elapsed_time": 3559,
+    "total_elevation_gain": 364,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16749356361,
+    "start_date": "2025-12-15T14:06:06Z",
+    "start_date_local": "2025-12-15T07:06:06Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16749356361",
+      "summary_polyline": "gx`lEpxdiTWh@Mh@KJU`@GXCTWh@EZYJCh@FDd@CTMFKVA_@xAw@fACr@[N]@e@CSIUBAF@^CRGBE?IEG?Yb@ITe@VYFOJILG@g@?OJKROHYEC@KVI?GFILCNGNW`@]H]PSPi@x@O\\]^OJu@?MBOb@EBYDOFg@GM@IH}@XGDO\\Gd@GLQSOIWEqAVw@Bg@Aa@BOJYb@Ml@Ur@E\\CFEDKDMKCAg@NGLe@`@s@v@g@^MRAVG^]z@Uz@E`@IFMDM?WPi@r@EX@FJ?\\IRKH@FBBZNHZHJJFNg@Ai@LSLGL?^?PDJ[V_@JIFS@SFYA]JKA?@[D]GQMKCg@J_@RS@OJM@WLUb@OJKPa@GM?QB_@f@AVCDK?IPK?IKKCGBIHQGS?i@GC?ALWC?LNRPr@FPJJJ^LXLFc@AQUIEe@_@a@e@QKm@KcAGOIM?KNAFBNRLMX?BLCHBOX?LBC@FEd@PSNGNAXN@\\IFDJGT?LKTC\\OP[h@KJE@INMVIT?D`@Q?RD?HO^_@AT@DX{@?G_@l@E?e@b@@KCAMBOJF[KFMLi@z@Ib@OAKPGBA?AEJ@NSL@Rs@VSDMLW\\[r@aAJSPs@Fa@?UFGK]QMU?MFQTFg@AEG?Rc@GAMDJ]QUDSFIN?LFdA@ZF\\Pl@p@b@XTX\\A?CWa@EU[_@a@kAAIZ?DKFBX?\\FLFNQLDJLJAHQJ?FC@WHOV[^E`@FNWLEP]JI`@KLMRATML?LILAJDNLTHH?XG~@Eb@KP?XQb@]BKCECQ@o@ZQ^GV?FE?MOMc@GGE?EaAIIBCEDKLQJYZ[NG\\GDCFM@SR}@d@cANkA~@q@TW`A{@VIV@BAHIFOF_@d@qA^c@TKb@AZB`@CP@h@Mf@GPBJFTTFAP_AXUh@O^WV?VDTMVANOFQBA~@Et@q@To@Xa@TSh@Sl@{@?GRUNGFKHARBNET[TI`@@NMx@c@LMDQ\\e@D@RE?o@RG\\HTBTATGNGDKBq@NOj@s@?QLk@Dc@EAI@i@\\[DCCBe@TQ?ODIXg@Fk@h@{@Nu@HOJIVMHKFy@Lg@@S",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      33.596369,
+      -111.768561
+    ],
+    "end_latlng": [
+      33.596046,
+      -111.767797
+    ],
+    "average_speed": 2.041,
+    "max_speed": 4.36,
+    "average_cadence": 78,
+    "average_temp": 27,
+    "has_heartrate": true,
+    "average_heartrate": 162.9,
+    "max_heartrate": 186,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 903.8,
+    "elev_low": 576.2,
+    "upload_id": 17839805488,
+    "upload_id_str": "17839805488",
+    "external_id": "garmin_ping_512893264781",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 4,
+    "has_kudoed": false,
+    "suffer_score": 87
   }
 ]
