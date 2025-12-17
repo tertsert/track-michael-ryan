@@ -35826,5 +35826,73 @@
     "total_photo_count": 4,
     "has_kudoed": false,
     "suffer_score": 87
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Night Run",
+    "distance": 2335.7,
+    "moving_time": 774,
+    "elapsed_time": 795,
+    "total_elevation_gain": 36,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16764501967,
+    "start_date": "2025-12-17T06:08:37Z",
+    "start_date_local": "2025-12-16T23:08:37Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 3,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16764501967",
+      "summary_polyline": "uqalEts}hTq@XSXSr@Eb@AzADZ?ZGH_BRe@Di@?kANsBPMM?WFk@Tk@bAqBpAoCNg@@MA{@Qc@ECW?{@VuBz@YE[mAAMBIVOhBq@|RmIv@_@ZKf@EDRFj@Et@eA`JMpAKj@eA|AOl@GhDAbDAb@Gl@Un@_@f@a@Tq@JS?MMIaCOqBKeAUaAAQ@{@B_@Rw@Zk@NGJM",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      33.600436,
+      -111.731947
+    ],
+    "end_latlng": [
+      33.60052,
+      -111.731926
+    ],
+    "average_speed": 3.018,
+    "max_speed": 3.871,
+    "average_cadence": 84.3,
+    "average_temp": 29,
+    "has_heartrate": true,
+    "average_heartrate": 147.9,
+    "max_heartrate": 164,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 535.4,
+    "elev_low": 495,
+    "upload_id": 17855047436,
+    "upload_id_str": "17855047436",
+    "external_id": "garmin_ping_513463881688",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 11
   }
 ]
