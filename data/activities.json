@@ -35962,5 +35962,73 @@
     "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 4
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Afternoon Run",
+    "distance": 1690.9,
+    "moving_time": 768,
+    "elapsed_time": 840,
+    "total_elevation_gain": 3,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16780825503,
+    "start_date": "2025-12-18T22:44:41Z",
+    "start_date_local": "2025-12-18T15:44:41Z",
+    "timezone": "(GMT-07:00) America/Phoenix",
+    "utc_offset": -25200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16780825503",
+      "summary_polyline": "eddcEleucTDH@TC\\Kh@]zAk@jAk@~@]Za@JyBEiABIEAG?a@JcANs@JiCCcADGFu@@i@OqDMiACy@IeAKeAGaBFWXIpACTFTTHp@EjALX^P`@N\\^`@l@Rn@Hb@VdBB@FAHPb@\\Vj@GGEs@AEg@Eh@H?F\\Ph@CZKh@aABe@Ei@c@wBMWCAWEc@?qA_@i@a@?DOY\\t@dAdB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      32.139077,
+      -110.869501
+    ],
+    "end_latlng": [
+      32.139047,
+      -110.867513
+    ],
+    "average_speed": 2.202,
+    "max_speed": 3.533,
+    "average_cadence": 85.5,
+    "average_temp": 30,
+    "has_heartrate": true,
+    "average_heartrate": 126,
+    "max_heartrate": 136,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 838,
+    "elev_low": 819,
+    "upload_id": 17871548294,
+    "upload_id_str": "17871548294",
+    "external_id": "garmin_ping_514066315294",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 2
   }
 ]
