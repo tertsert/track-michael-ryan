@@ -36093,5 +36093,68 @@
     "pr_count": 0,
     "total_photo_count": 1,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "d+g k-i-s-s-i-n-g",
+    "distance": 1930.3,
+    "moving_time": 565,
+    "elapsed_time": 565,
+    "total_elevation_gain": 23.3,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 16798908619,
+    "start_date": "2025-12-21T05:19:35Z",
+    "start_date_local": "2025-12-20T23:19:35Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16798908619",
+      "summary_polyline": "}llxFnfemQ[De@Ji@FSH]DYAa@C_@I{@e@WWSc@SUg@a@MAI?KXEBS?]Dg@Z}CpDFT^dALf@P|AHpACdBB|@Cn@H`@THJ?F@XA~@@p@EV@HDBCh@Dr@AVBRCd@D^CPD\\CXBdACJB`@BXCR@PCnAB^Al@B`@ER@VEVDf@AJBb@APBHCDSCSBUCG@]AGBEAGFW@Y?WG[BYCGBm@BGDg@?QGEO?c@]SSMYGCIBKZUPe@r@YTw@\\Q?]QMMAGLUPs@LaBAGBaBAIIUG]OGY?ECM@EAmALAAAIGE",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.864957,
+      -96.697513
+    ],
+    "end_latlng": [
+      40.864942,
+      -96.697462
+    ],
+    "average_speed": 3.416,
+    "max_speed": 4.83,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 382.3,
+    "elev_low": 367.8,
+    "upload_id": 17889949322,
+    "upload_id_str": "17889949322",
+    "external_id": "959CEE7D-E725-453F-97F4-F2DC9D82B724-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
   }
 ]
