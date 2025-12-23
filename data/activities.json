@@ -36287,5 +36287,73 @@
     "pr_count": 0,
     "total_photo_count": 1,
     "has_kudoed": false
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "Afternoon Run",
+    "distance": 7403.8,
+    "moving_time": 2158,
+    "elapsed_time": 2180,
+    "total_elevation_gain": 19,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct Solar",
+    "id": 16823834458,
+    "start_date": "2025-12-23T20:53:45Z",
+    "start_date_local": "2025-12-23T14:53:45Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -21600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 6,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16823834458",
+      "summary_polyline": "my|wFnvxlQf@JDA`@ONMNWBMZgBHQVSZQ`@Yd@Qn@Cr@Y~A_@\\]^o@Nq@EgBBMFGXCb@Z`@Jh@O|@u@JEXc@Jo@A}ACa@K_AEq@@i@F[Z_@Xe@Rg@Zk@j@]\\[LM`@Sd@Cl@KJ?h@Jf@Bt@MXJFd@I`AAp@H~CHf@`@r@Tv@El@c@bBYv@SfASn@Yh@OrBKn@St@_@dBKp@Cf@OpA?d@Pj@AHKRa@d@Sd@g@x@Sh@i@tBAp@Nb@`@l@hArAdAbAp@h@vDfBDHA^c@bCGLWJc@IkEiAa@@KFKN_@zAIAs@y@aAi@e@g@[SaAeA_@[q@a@c@i@mAcAg@i@c@_@_EaD}A{AkCuBe@]}@aAiFmEwAgAMYL?\\PzAhApAt@vB`Ab@BFANYRi@~@SNKT[J_@Lw@Pm@ZY`@Sj@g@bAQ~@Yt@O`@Ql@k@Vk@Bm@Cu@Ds@BEXINFHJ`@VZI\\ElAy@Rg@J}@AaAYwC@]No@X_@x@eB\\]d@Wb@a@NI`@Ix@Kd@?n@Pr@Mf@HJXO~ABxDBVVf@b@t@Dl@Kn@c@vAk@`CSj@QZI^OvBQv@Wx@SpAGr@Cp@Ej@GVANBLLZ@NKV[`@Uf@e@l@Wf@o@nCBr@@FT`@fA|Ab@d@j@j@dBdA~BfAXZg@tCW^a@CcBk@c@GUGo@YWCI@QHU\\In@Mb@SMm@m@iAq@[_@_A{@oD}Cg@]eAeAaBsAa@UeAaAk@a@]c@][qAaAq@m@[S{A{Ac@]}CoC}AkA[]CKDEJDfEhCbChAL@\\QV_A",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.785034,
+      -96.633516
+    ],
+    "end_latlng": [
+      40.785015,
+      -96.633568
+    ],
+    "average_speed": 3.431,
+    "max_speed": 4.657,
+    "average_cadence": 83.7,
+    "average_temp": 26,
+    "has_heartrate": true,
+    "average_heartrate": 160.1,
+    "max_heartrate": 177,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 384.2,
+    "elev_low": 348,
+    "upload_id": 17915165928,
+    "upload_id_str": "17915165928",
+    "external_id": "garmin_ping_515767227922",
+    "from_accepted_tag": false,
+    "pr_count": 3,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 58
   }
 ]
