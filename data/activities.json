@@ -36163,7 +36163,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Night Run",
+    "name": "sweet treat",
     "distance": 1693.5,
     "moving_time": 498,
     "elapsed_time": 506,
@@ -36193,8 +36193,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
@@ -36221,7 +36221,7 @@
     "external_id": "garmin_ping_515478984678",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 5
   },
