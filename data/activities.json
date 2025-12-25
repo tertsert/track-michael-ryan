@@ -36362,7 +36362,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "new tech",
     "distance": 1936.2,
     "moving_time": 609,
     "elapsed_time": 609,
@@ -36392,8 +36392,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
@@ -36424,7 +36424,7 @@
     "external_id": "garmin_ping_516281986392",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 7
   }
