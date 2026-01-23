@@ -37571,8 +37571,7 @@
     "from_accepted_tag": false,
     "pr_count": 0,
     "total_photo_count": 0,
-    "has_kudoed": false,
-    "suffer_score": 75
+    "has_kudoed": false
   },
   {
     "resource_state": 2,
@@ -37637,7 +37636,6 @@
     "from_accepted_tag": false,
     "pr_count": 0,
     "total_photo_count": 2,
-    "has_kudoed": false,
-    "suffer_score": 144
+    "has_kudoed": false
   }
 ]
