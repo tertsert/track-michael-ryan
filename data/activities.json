@@ -37646,7 +37646,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "forgot my toe socks, blister city",
     "distance": 24140.2,
     "moving_time": 8371,
     "elapsed_time": 8371,
@@ -37676,8 +37676,8 @@
     "trainer": true,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [],
@@ -37702,7 +37702,7 @@
     "external_id": "garmin_ping_527568646646",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 4,
     "has_kudoed": false,
     "suffer_score": 149
   }
