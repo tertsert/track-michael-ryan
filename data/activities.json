@@ -38072,7 +38072,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "first time in the lone star",
     "distance": 17287.9,
     "moving_time": 5784,
     "elapsed_time": 5914,
@@ -38102,8 +38102,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
