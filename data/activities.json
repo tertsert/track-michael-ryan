@@ -39500,7 +39500,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Morning Ride",
+    "name": "breakfast with unc’s + landon",
     "distance": 17888.8,
     "moving_time": 4273,
     "elapsed_time": 9213,
@@ -39530,8 +39530,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
