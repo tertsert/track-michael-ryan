@@ -40339,5 +40339,71 @@
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 82
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "resource_state": 1
+    },
+    "name": "next time i shouldn’t eat a whole bowl on my own",
+    "distance": 24267.7,
+    "moving_time": 5061,
+    "elapsed_time": 7907,
+    "total_elevation_gain": 74.4,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 18951658860,
+    "start_date": "2026-06-16T22:37:21Z",
+    "start_date_local": "2026-06-16T17:37:21Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 8,
+    "comment_count": 1,
+    "athlete_count": 3,
+    "photo_count": 0,
+    "map": {
+      "id": "a18951658860",
+      "summary_polyline": "ag_xFbujlQMk@k@mAIg@a@iAOm@MOg@qAm@gBg@eB{@}Bk@iBw@yBSw@Yo@Ie@q@uBw@oBg@}AaCsHwA}D_AwCOo@Si@iAkDuB{F}@_DeAyCEQe@gAg@gB}AqE}@sCO[wDmL[u@w@aDa@yCCi@EK?EDIG}@A_BD}ATsDPwBNsE@qBIuCy@iLEm@@GMoAUwDi@_HA]EWYsDc@gGAa@EUc@cGQsDGoDBeCD[AOB{AJgB^{Df@}CDc@~@{DhAoFRm@?Ob@yBR{ADGJ{BB}CEaBK{AOqD@IC}@UmE?k@S}CMqD@KGa@]oJSoDEeB@g@AK?_BDoAVoDd@aHFo@Dk@AUVmCReDBwAC}BQcCQwAaAyEAWQi@e@wBKi@Ea@a@cBE[Us@s@_DOmASm@{@qEQg@u@qDGk@Qi@w@gD_@sBa@cBcAaFSo@}@yEs@wCYoA?KoAoFYcBcAgEo@qDOe@a@sBcDuN?SQk@[gBC}@Y]KACGUkAQaBwAqGc@mCKyAGiBB{FTaMJaI?c@DaEBiADo@BqFB_@HkGDeGLyGA_CEgAMuBWyBc@gC_@uAY_Au@mBuAsCqAuCu@uA{@mB_GsLa@{@m@_Bu@aCm@mCMa@o@_E[iCQ}CKyCAeB@sBLiD?q@TeF@oBNwC?kAt@qSH}DHgBAIFq@@wARaEFwCPgDBO?wAGQ]q@Go@BuDDgAF{DNMz@Lv@BxEMb@BZM@MIKAM@KBCBBKX]@EM@?DEAFDF@ECEBI?K@@CDAC^]DM@FMj@NJCIYUY^DB@FTFP]@n@G@_KFOFCHS|HApBB^DRb@r@BTm@lPYxKEd@O`GI~@QrGStEErBe@jNChFHfDPbDd@dEl@jDdAjEvA`Ev@fBtCzF`EnIlA~B|BbF~@xCj@bDRtARnBHbC@hBClDO`IEfGEd@y@pq@@nALtCFn@T`BbBhINvANx@XVNFBHLxAZdBZpAhAxFbAdE`It_@`CvKHj@r@vCZdB\\tAvB~JfAzEdBxIxDfQr@bFHrCCjCQjDkAtOWfECvAA`CjA~YbAnUHlEAdAMvBY`CeBdI_AbEg@|BQlAa@zDSfCUbJ\\xHVnCfFvt@FlCAzBErAi@pIKjC?pBDz@JjA?RJbAj@rCh@|AZpAVj@nFjPP^nJpY|@bCpAjEdAtCdD|JjArDbExLNn@Th@~@jC^tA~@dCLj@fAxCjBxFLXDBVC@H",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      40.797453,
+      -96.561613
+    ],
+    "end_latlng": [
+      40.797202,
+      -96.561893
+    ],
+    "average_speed": 4.795,
+    "max_speed": 8.5,
+    "average_watts": 50.9,
+    "device_watts": false,
+    "kilojoules": 257.6,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 415,
+    "elev_low": 363.2,
+    "upload_id": 20064619775,
+    "upload_id_str": "20064619775",
+    "external_id": "B87B3FBA-7AE1-40D1-BB08-651540A4B6FA-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
   }
 ]
