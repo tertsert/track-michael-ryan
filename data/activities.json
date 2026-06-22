@@ -40502,7 +40502,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 1,
-    "kudos_count": 13,
+    "kudos_count": 15,
     "comment_count": 1,
     "athlete_count": 1,
     "photo_count": 0,
@@ -40556,7 +40556,7 @@
       "id": 108811823,
       "resource_state": 1
     },
-    "name": "Afternoon Run",
+    "name": "atp i only run to steal landon’s turf",
     "distance": 3706.7,
     "moving_time": 1137,
     "elapsed_time": 1140,
@@ -40586,8 +40586,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
