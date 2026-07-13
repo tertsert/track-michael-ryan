@@ -42174,7 +42174,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 16,
+    "kudos_count": 19,
     "comment_count": 1,
     "athlete_count": 1,
     "photo_count": 0,
@@ -42229,7 +42229,7 @@
       "id_str": "108811823",
       "resource_state": 1
     },
-    "name": "Morning Run",
+    "name": "next time we are making ice cream",
     "distance": 9919.6,
     "moving_time": 3216,
     "elapsed_time": 3308,
@@ -42248,9 +42248,9 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 1,
-    "kudos_count": 0,
-    "comment_count": 0,
-    "athlete_count": 1,
+    "kudos_count": 8,
+    "comment_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a19293880093",
@@ -42260,8 +42260,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
@@ -42287,7 +42287,7 @@
     "external_id": "garmin_ping_598006158519",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 53
   }
