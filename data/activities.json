@@ -1347,7 +1347,7 @@
     "location_city": null,
     "location_state": null,
     "location_country": null,
-    "achievement_count": 0,
+    "achievement_count": 1,
     "kudos_count": 3,
     "comment_count": 0,
     "athlete_count": 2,
@@ -1385,7 +1385,7 @@
     "upload_id_str": "10352599668",
     "external_id": "9F5A278F-0B6F-41A3-B2F1-9A2D90EF8FF2.fit",
     "from_accepted_tag": false,
-    "pr_count": 0,
+    "pr_count": 1,
     "total_photo_count": 1,
     "has_kudoed": false,
     "suffer_score": 159
