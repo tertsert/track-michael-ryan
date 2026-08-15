@@ -42640,7 +42640,7 @@
       "id_str": "108811823",
       "resource_state": 1
     },
-    "name": "Morning Ride",
+    "name": "bombastic side eye",
     "distance": 39942.3,
     "moving_time": 6737,
     "elapsed_time": 18935,
@@ -42659,7 +42659,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 16,
-    "kudos_count": 0,
+    "kudos_count": 1,
     "comment_count": 0,
     "athlete_count": 2,
     "photo_count": 0,
@@ -42671,8 +42671,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -42700,7 +42700,7 @@
     "external_id": "garmin_ping_613921676218",
     "from_accepted_tag": false,
     "pr_count": 3,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 46
   }
