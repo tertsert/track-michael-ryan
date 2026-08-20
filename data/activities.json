@@ -42780,7 +42780,7 @@
       "id_str": "108811823",
       "resource_state": 1
     },
-    "name": "Evening Run",
+    "name": "post sunset > pre sunset",
     "distance": 8065.7,
     "moving_time": 2661,
     "elapsed_time": 2967,
@@ -42811,8 +42811,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": "g27536600",
     "start_latlng": [
