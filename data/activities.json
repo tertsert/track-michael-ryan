@@ -43056,7 +43056,7 @@
       "id_str": "108811823",
       "resource_state": 1
     },
-    "name": "Evening Ride",
+    "name": "we miss faith😭",
     "distance": 23997.8,
     "moving_time": 4542,
     "elapsed_time": 6060,
@@ -43075,7 +43075,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 4,
     "comment_count": 0,
     "athlete_count": 2,
     "photo_count": 0,
@@ -43087,8 +43087,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
