@@ -43466,5 +43466,70 @@
     "total_photo_count": 3,
     "has_kudoed": false,
     "suffer_score": 13
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "id_str": "108811823",
+      "resource_state": 1
+    },
+    "name": "“intervals”, more like “in tears i fold”",
+    "distance": 7168,
+    "moving_time": 2278,
+    "elapsed_time": 2487,
+    "total_elevation_gain": 35,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "COROS PACE 3",
+    "id": 20021308687,
+    "id_str": "20021308687",
+    "start_date": "2026-09-03T10:43:49Z",
+    "start_date_local": "2026-09-03T05:43:49Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 5,
+    "comment_count": 1,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a20021308687",
+      "summary_polyline": "ubexFpd~lQ?PG|@BJFFTBnDBrCHLDBRI`A@lAFd@NNfALt@Ep@?r@Cr@?tADD@FJ@z@ArCDf@@x@IzBCrAHfC?h@Dv@CjDBpBDl@VnA\\|@Hb@Bp@?nAD|@@rD@~@LvBDxAAb@BDRTHX?LKzBQv@C\\?jBFbAEzC@rCF`AAZEZGPYZ_@NQLMTCV?ZLdADnCIvDJgIKiAAe@BOHMJKh@WTUN]Da@M{AC_F@uAEs@?iBBc@Jw@@gADs@COEO]YCK@kAEiEFeECqDGw@_@oAEkBFcJ?uC?@BU?^EX?tB@E?WBmHAeDCiCDcE?}BBkB?uBBoA?gLAgCF_HEuKBcB?iGFc@BkA?gB@oBCoQBc@LaABc@?gBF_CBsB?yCAQEMIEMA{@FgDDqOCuDBIDC\\HtD?hCRcJrDEhH@bEDzDGtABHBBL?PIjI@bBCtASzC?`JIdCBv@CxC@dACbB@`@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g27536600",
+    "start_latlng": [
+      40.827472,
+      -96.661367
+    ],
+    "end_latlng": [
+      40.823263,
+      -96.652309
+    ],
+    "average_speed": 3.147,
+    "max_speed": 4.8,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 372,
+    "elev_low": 360,
+    "upload_id": 21161609032,
+    "upload_id_str": "21161609032",
+    "external_id": "stripped_accepted_tag_from_21158663108.fit",
+    "from_accepted_tag": true,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false
   }
 ]
