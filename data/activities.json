@@ -43368,7 +43368,7 @@
     "private": false,
     "visibility": "everyone",
     "flagged": false,
-    "gear_id": "g27536600",
+    "gear_id": "g33660975",
     "start_latlng": [
       40.816107,
       -96.709805
@@ -43508,7 +43508,7 @@
     "private": false,
     "visibility": "everyone",
     "flagged": false,
-    "gear_id": "g27536600",
+    "gear_id": "g33660975",
     "start_latlng": [
       40.827472,
       -96.661367
@@ -43644,7 +43644,7 @@
     "private": false,
     "visibility": "everyone",
     "flagged": false,
-    "gear_id": "g27536600",
+    "gear_id": "g33660975",
     "start_latlng": [
       40.816133,
       -96.709839
@@ -43713,7 +43713,7 @@
     "private": false,
     "visibility": "everyone",
     "flagged": false,
-    "gear_id": "g27536600",
+    "gear_id": "g33660975",
     "start_latlng": [
       40.809282,
       -96.711751
@@ -43740,5 +43740,74 @@
     "total_photo_count": 0,
     "has_kudoed": false,
     "suffer_score": 16
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 108811823,
+      "id_str": "108811823",
+      "resource_state": 1
+    },
+    "name": "crepuscular rays on point",
+    "distance": 8227.9,
+    "moving_time": 2497,
+    "elapsed_time": 2511,
+    "total_elevation_gain": 57,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Garmin Instinct 3",
+    "id": 20095506889,
+    "id_str": "20095506889",
+    "start_date": "2026-09-08T22:41:51Z",
+    "start_date_local": "2026-09-08T17:41:51Z",
+    "timezone": "(GMT-06:00) America/Chicago",
+    "utc_offset": -18000,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 1,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a20095506889",
+      "summary_polyline": "a|bxF~rgmQCCQFiBVWFc@BYHcA?kADe@s@CWByAI_AIGKCy@BSG[?o@DWLU?N}@Iq@C}@@uCKa@GAi@g@YEq@Ai@Hw@B]AWB]AYAg@Sa@I}@I[g@KYIg@Gu@CcBBc@|@k@f@m@j@e@Z_@N]DmB?kDBy@G}A?_@D]CsBGKq@KuBEk@DoA@SDY@}@CU@i@Ce@FW?mFAUBy@XWDOMOWo@{AeAmCScAk@wAKc@Fg@?a@Mi@SSK[M}B[CMD[VWRKXo@t@u@X_ALaAj@CL@DTv@JTDZQP{Ar@GH_@T_Af@_D~@]BEAMBOHUROTmAj@]Jm@L[AgAPg@Dq@LsBLqB@]a@EWBMP[?OGMWKC?ST?\\D^Nz@j@hBjAdCtAfFd@hAVrAz@hBj@`BZdBPtCPz@JX\\f@Tr@RZl@p@h@f@Zd@^p@`@h@Xh@nAlBNZx@hA~@`B|B`GPVFBNPZ`@N\\RV|A`Af@r@|ArCL\\b@jBXv@b@f@DBfAz@rBdBt@d@~BnAjArATJj@HnBEpALdAP~@V|A`AHHRJf@^hAZZPhA|@TRZ`@\\VNHnBp@xAvAlAnAp@l@hDnE|@t@vAx@z@^l@Lh@DdCHz@H|CNP@TABE@KEqADkFIq@Dw@?mH@mDBYCiB@q@Ho@?kBBa@?cJC_CBoC@yFCwCBkA?_FAm@EAA\\@|@C`@FhACNQV[H]BCBIREbAFlCE`@?ZDj@EFg@D_A?]Ga@@gAC}@DeBAkAFYOWk@C]Fe@GqB@GC[?i@HYREr@@\\LX@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g33660975",
+    "start_latlng": [
+      40.816177,
+      -96.709751
+    ],
+    "end_latlng": [
+      40.816231,
+      -96.710158
+    ],
+    "average_speed": 3.295,
+    "max_speed": 4.56,
+    "average_cadence": 83.3,
+    "has_heartrate": true,
+    "average_heartrate": 152.6,
+    "max_heartrate": 180,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 360,
+    "elev_low": 340.2,
+    "upload_id": 21240916652,
+    "upload_id_str": "21240916652",
+    "external_id": "garmin_ping_625816490783",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "suffer_score": 49
   }
 ]
