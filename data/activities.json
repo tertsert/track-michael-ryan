@@ -44023,7 +44023,7 @@
       "id_str": "108811823",
       "resource_state": 1
     },
-    "name": "Afternoon Ride",
+    "name": "what did the buffalo say to his kid when he left for school?",
     "distance": 23013.5,
     "moving_time": 4102,
     "elapsed_time": 4741,
@@ -44042,8 +44042,8 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 7,
-    "kudos_count": 0,
-    "comment_count": 0,
+    "kudos_count": 10,
+    "comment_count": 1,
     "athlete_count": 2,
     "photo_count": 0,
     "map": {
@@ -44054,8 +44054,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "everyone",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -44083,7 +44083,7 @@
     "external_id": "garmin_ping_631681677086",
     "from_accepted_tag": false,
     "pr_count": 0,
-    "total_photo_count": 0,
+    "total_photo_count": 2,
     "has_kudoed": false,
     "suffer_score": 13
   }
